@@ -67,9 +67,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="burger-menu">
-                            <span></span><span></span><span></span>
-                        </div>
+                       
                         <a href="index.htm" class="nav__link adaptive__logo">
                             <img src="local/markup/dist/img/logo.svg" alt="">
                         </a>
@@ -122,6 +120,9 @@
                                 </li>
                             </ul>
                         </nav>
+                        <div class="burger-menu">
+                            <span></span><span></span><span></span>
+                        </div>
                     </div>  
                 </div>   
             </div>
@@ -968,7 +969,7 @@
 <!-- burger menu -->
 <script>
     document.querySelector('.burger-menu').addEventListener('click', () => {
-        document.querySelector('.nav').classList.toggle('burger-open')
+        document.querySelector('nav').classList.toggle('burger-open');
     })
 </script>
 </body>
