@@ -1,0 +1,276 @@
+
+
+/* Start:/local/components/sng/hero/templates/.default/style.css?16959660512847*/
+.hero__item-red {
+    background: linear-gradient(to top right, #BA3516, #FF8D44);
+}
+.hero__item-red-dark {
+    background: linear-gradient(to top right, #BA3516, #a22323);
+}
+.hero__item-blue {
+    background: linear-gradient(to top right, #3F69A0, #85B9FC);
+}
+.hero__item-gold {
+    background: linear-gradient(to top right, #AE8839, #FFD06D);
+}
+.hero__item-green {
+    background: linear-gradient(to top right, #4FAB9E, #88FFDD);
+}
+.hero__item-azure {
+    background: linear-gradient(to top right, #00A4BF, #98F0FF);
+}
+.hero__item-green-blue {
+    background: linear-gradient(to top right, #0093E9, #80D0C7);
+}
+.hero__item-purple {
+    background: #E5E3FC;
+}
+.hero__item-emerald {
+    background: rgb(50, 165, 165);
+}
+.hero__item-grey {
+    background: rgb(120, 120, 120);
+}
+.hero__item-blue3 {
+    background-color: #0069aa;
+}
+.hero__item-blue4 {
+    background-color: #3764a0;
+}
+.hero__item-lotto {
+    background: #a6a09b;
+}
+.hero__link-lk {
+    color: #FFFFFF;
+    text-decoration: underline;
+    outline: none;
+}
+.hero__link-lk:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.hero__item-blue2 {
+    background-color: #3399cc;
+}
+.hero img {
+    margin: 0;
+}
+.hero__title {
+    font-weight: 700;
+}
+.hero__item-old-day {
+    background-image: url("/local/markup/dist/img/old_day_1.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-9may {
+    background-image: url("/local/markup/dist/img/9may_map.png");
+    background-size: cover;
+    padding: 0 0 0 -10px;
+    height: 100%
+}
+.hero__item-fond_28 {
+    background-image: url("../../../../../../local/markup/dist/img/zal_fond.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-9may2023 {
+    background-image: url("/local/markup/dist/img/9may2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-den_neft2023 {
+    background-image: url("../../../../../../local/markup/dist/img/den_neft_2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-12june2023 {
+    background-image: url("../../../../../../local/markup/dist/img/12june2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-grey-dark {
+    background: #575757;
+}
+.hero__item-denneft2022 .hero__img-denneft2022 {
+    width: 550px;
+    height: auto;
+    margin-bottom: -80px;
+}
+.hero__item-denneft2022 .hero__img-denneft2022-ellips {
+    width: 480px;
+    height: 200px;
+    margin-bottom: -80px;
+}
+
+.hero__img-45-years {
+    width: 550px;
+    height: auto;
+}
+
+.hero__title-number {
+    color: #F55748;
+    font-size: 190px !important;
+    line-height: 190px;
+}
+
+.hero__title-text {
+    color: #F55748;
+    margin-top: 20px;
+}
+
+.hero__description-dark {
+    color: #000000 !important;
+}
+
+/* End */
+
+
+/* Start:/local/components/sng/contract/templates/.default/style.css?1617877994734*/
+.contract__hero {
+    display: none;
+    /*-webkit-animation: show 3s 1s;*/
+    /*-o-animation: show 3s 1s;*/
+    /*animation: show 3s 1s;*/
+}
+
+.contract__hero-active {
+    display: block;
+}
+
+.contract__hero-number {
+    opacity: 0;
+    -webkit-animation: show 4s 6s;
+    -o-animation: show 4s 6s;
+    animation: show 4s 6s;
+}
+
+.type_text .new {
+    opacity: 0;
+}
+
+.type_text .div_opacity {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+/* End */
+
+
+/* Start:/local/components/sng/calc-banner/templates/.default/style.css?16115584452212*/
+.footer__calc {
+    position: fixed;
+    top: 571px;
+    right: -4px;
+    z-index: 999;
+    background-color: transparent;
+    border: 2px solid #a0371e;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(31, 34, 41, 0.3);
+    -moz-box-shadow: 0 8px 16px 0 rgba(31, 34, 41, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(31, 34, 41, 0.3);
+}
+.calc-banner {
+    text-align: justify;
+    /*padding: 25px 0;*/
+    position: relative;
+}
+.calc-banner__img {
+    max-width: 30px;
+    height: auto;
+}
+.calc-banner__box {
+    padding: 12px 18px 12px 18px;
+}
+.calc-banner__body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*.calc-banner__body p {*/
+/*    font-family: Open Sans, sans-serif;*/
+/*    font-size: 16px;*/
+/*    font-weight: 400;*/
+/*    color: #2a2a2a;*/
+/*    margin: 25px 0;*/
+/*    line-height: 1.43;*/
+/*}*/
+.calc-banner__body span {
+    color: #2a2a2a;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    padding-left: 15px;
+}
+.calc-banner__body h5 {
+    color: #2a2a2a;
+    font-size: 18px;
+}
+.calc-banner__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.calc-banner__btn {
+    margin-left: 20px;
+    border: 1px solid red;
+}
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+.calc-banner__close {
+    background: url("../../../../../../local/markup/dist/img/close-gray.svg") no-repeat 50%;
+    font-size: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    top: 8px;
+    left: -42px;
+}
+.calc-banner__close:focus {
+    outline: none;
+}
+@keyframes fadeIn {
+    0% {right: -500px;}
+    100% {right: -4px;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {right: -500px;}
+    100% {right: -4px;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {right: -500px;}
+    100% {right: -4px;}
+}
+
+@-o-keyframes fadeIn {
+    0% {right: -500px;}
+    100% {right: -4px;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {right: -500px;}
+    100% {right: -4px;}
+}
+
+
+/* End */
+/* /local/components/sng/hero/templates/.default/style.css?16959660512847 */
+/* /local/components/sng/contract/templates/.default/style.css?1617877994734 */
+/* /local/components/sng/calc-banner/templates/.default/style.css?16115584452212 */

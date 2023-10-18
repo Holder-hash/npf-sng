@@ -1,0 +1,290 @@
+
+
+/* Start:/local/components/sng/calc/templates/.default/style.css?16915769244899*/
+.calc__border {
+    border: 1px solid #32a5a5;
+    padding: 10px;
+}
+.text__info {
+    color: #32a5a5;
+}
+.calc__input {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    outline: none !important;
+}
+.calc__input:focus {
+    border-color: #32a5a5 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.calc__input-error {
+    border-color: #ff0026 !important;
+}
+.calc__text-error {
+    color: #ff0026;
+    margin-top: .5rem;
+    display: block;
+}
+.calc__label {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    white-space: nowrap;
+}
+.calc__p {
+    line-height: 1.51;
+    font-size: 13px !important;
+    text-align: justify;
+}
+.calc__col {
+    margin-top: -10px;
+}
+.calc__img-box {
+    position: relative;
+}
+.calc__img-item {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+}
+.calc__result-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calc__result-number {
+    font-size: 26px;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+}
+.calc__result-text {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 6px;
+    word-spacing: 1px;
+}
+.calc__total {
+    background-color: #f5f6fa;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    text-align: justify;
+    padding: 10px 0;
+}
+.output {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    margin-left: 10px;
+}
+.calc__footer-box {
+    background-color: #e7f3fa;
+    padding: 10px;
+    margin-top: 20px;
+}
+.calc__footer-description {
+    margin-top: 10px;
+}
+.calc__footer-text {  
+    line-height: 1.51;
+    font-size: 11px !important;
+    margin: 0;
+    color: #767676;
+}
+.calc__footer-title {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    color: #32a5a5;
+}
+.calc__footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.calc__footer-item {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    color: #32a5a5;
+}
+.calc__footer-item:before {
+    content: '-';
+    margin-right: 5px;
+}
+.calc__range {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    border: none !important;
+    padding: 0 !important;
+}
+.calc__range:focus {
+    outline: none;
+}
+.calc__range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #CFFFF5;
+    background: #B2B2B2;
+    border-radius: 50px;
+    border: 0 solid #75DFFF;
+}
+.calc__range::-webkit-slider-thumb {
+    box-shadow: 0 0 0 #767676;
+    border: 1px solid #767676;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #767676;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+.calc__range:focus::-webkit-slider-runnable-track {
+    background: #B2B2B2;
+}
+.calc__range::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #CFFFF5;
+    background: #B2B2B2;
+    border-radius: 50px;
+    border: 0 solid #75DFFF;
+}
+.calc__range::-moz-range-thumb {
+    box-shadow: 0 0 0 #767676;
+    border: 1px solid #767676;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #767676;
+    cursor: pointer;
+}
+.calc__range::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.calc__range::-ms-fill-lower {
+    background: #B2B2B2;
+    border: 0 solid #75DFFF;
+    border-radius: 100px;
+    box-shadow: 0 0 0 #CFFFF5;
+}
+.calc__range::-ms-fill-upper {
+    background: #B2B2B2;
+    border: 0 solid #75DFFF;
+    border-radius: 100px;
+    box-shadow: 0 0 0 #CFFFF5;
+}
+.calc__range::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0 0 0 #767676;
+    border: 1px solid #767676;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #767676;
+    cursor: pointer;
+}
+.calc__range:focus::-ms-fill-lower {
+    background: #B2B2B2;
+}
+.calc__range:focus::-ms-fill-upper {
+    background: #B2B2B2;
+}
+.calc__ad {
+    display: flex;
+    gap: 10px;
+}
+.calc__ad-btn {
+    font-size: 12px !important;
+    color: #ffa041 !important;
+    border-color: #ffa041 !important;
+}
+.calc__ad-btn:hover {
+    color: #ff872f !important;
+    border-color: #ff872f !important;
+}
+#percent-check {
+    margin-top: 0.15rem;
+}
+
+/* End */
+
+
+/* Start:/local/components/sng/banner/templates/.default/style.css?15846080931266*/
+.banner-1{
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(85, 159, 210, 0.33);
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.banner-1__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 20px;
+}
+
+.banner-1__img {
+    width: 52px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.banner-1__text {
+    font-size: 14px;
+    color: #6a6a6a;
+    font-family: 'Roboto', sans-serif;
+    width: 190px;
+}
+
+.banner-1:hover .banner-1__icon {
+    animation: pulse 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        margin-left: 5px;
+    }
+    100% {
+        margin-left: 12px;
+    }
+}
+
+.banner-1__icon::before {
+    margin-left: 5px;
+    border-color: #32a5a5;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* End */
+/* /local/components/sng/calc/templates/.default/style.css?16915769244899 */
+/* /local/components/sng/banner/templates/.default/style.css?15846080931266 */

@@ -1,0 +1,150 @@
+
+
+/* Start:/local/components/sng/contribution/templates/.default/style.css?16923517911751*/
+/* Description Section */
+.contribution__description {
+    margin-bottom: 2rem;
+}
+
+/* Form Section */
+.contribution__form-fields {
+    display: flex;
+}
+.contribution__form-labels {
+    padding-left: 0;
+    max-width: 150px;
+}
+.contribution__form-label {
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+.contribution__form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100%;
+}
+.contribution__form-item {
+    list-style: none;
+    position: relative;
+    max-width: 350px;
+}
+.contribution__form-item:last-child {
+    display: flex;
+    gap: 5px;
+}
+.contribution__form-input {
+    border: 1px solid #c4c7cc;
+    width: 100%;
+    max-width: 350px;
+}
+.contribution__form-input-calendar {
+    width: 121px;
+}
+
+/* Receipt Section */
+.contribution__receipt-buttons {
+    display: flex;
+    gap: 10px;
+}
+.contribution__button {
+    border-radius: 100px;
+    border: none;
+    padding: 15px 30px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    background-color: #198989;
+}
+.contribution__form-calendar {
+    width: 15px;
+    height: 27px;
+    position: absolute;
+    left: 102px;
+    bottom: -1px;
+    pointer-events: none;
+}
+
+.contribution__form-label-error {
+    visibility: hidden;
+    color: #ff0026;
+    white-space: nowrap;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.contribution__form-input-error {
+    border: 1px solid #ff0026;
+}
+/* End */
+
+
+/* Start:/local/components/sng/banner/templates/.default/style.css?15846080931266*/
+.banner-1{
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(85, 159, 210, 0.33);
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.banner-1__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 20px;
+}
+
+.banner-1__img {
+    width: 52px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.banner-1__text {
+    font-size: 14px;
+    color: #6a6a6a;
+    font-family: 'Roboto', sans-serif;
+    width: 190px;
+}
+
+.banner-1:hover .banner-1__icon {
+    animation: pulse 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        margin-left: 5px;
+    }
+    100% {
+        margin-left: 12px;
+    }
+}
+
+.banner-1__icon::before {
+    margin-left: 5px;
+    border-color: #32a5a5;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* End */
+/* /local/components/sng/contribution/templates/.default/style.css?16923517911751 */
+/* /local/components/sng/banner/templates/.default/style.css?15846080931266 */

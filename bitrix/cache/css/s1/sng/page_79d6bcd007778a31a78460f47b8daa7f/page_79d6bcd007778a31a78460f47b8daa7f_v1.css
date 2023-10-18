@@ -1,0 +1,114 @@
+
+
+/* Start:/local/templates/sng/components/bitrix/news.list/news-list/style.css?15752141592938*/
+/* loader start */
+.btn-loader{
+    position: relative;
+}
+.btn-loader .loader{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -7px;
+    width: 140px;
+    height: 14px;
+}
+.btn-loader.is-loading .loader{
+    display: block;
+}
+.btn-loader.is-loading .btn-loader__text{
+    opacity: 0;
+}
+.btn-loader .loader__block{
+    border: 2px solid #ffffff;
+    float: left;
+    height: 14px;
+    margin-left: 12px;
+    width: 14px;
+    opacity: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -ms-border-radius: 3px;
+    animation-name: loader;
+        -o-animation-name: loader;
+        -ms-animation-name: loader;
+        -webkit-animation-name: loader;
+        -moz-animation-name: loader;
+    animation-duration: 1.5s;
+        -o-animation-duration: 1.5s;
+        -ms-animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+        -o-animation-direction: normal;
+        -ms-animation-direction: normal;
+        -webkit-animation-direction: normal;
+        -moz-animation-direction: normal;
+}
+.btn-loader .loader__block_1{
+    animation-delay: 0.45s;
+        -o-animation-delay: 0.45s;
+        -ms-animation-delay: 0.45s;
+        -webkit-animation-delay: 0.45s;
+        -moz-animation-delay: 0.45s;
+}
+.btn-loader .loader__block_2{
+    animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
+        -ms-animation-delay: 0.6s;
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+}
+.btn-loader .loader__block_3{
+    animation-delay: 0.75s;
+        -o-animation-delay: 0.75s;
+        -ms-animation-delay: 0.75s;
+        -webkit-animation-delay: 0.75s;
+        -moz-animation-delay: 0.75s;
+}
+.btn-loader .loader__block_4{
+    animation-delay: 0.9s;
+        -o-animation-delay: 0.9s;
+        -ms-animation-delay: 0.9s;
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+}
+.btn-loader .loader__block_5{
+    animation-delay: 1.05s;
+        -o-animation-delay: 1.05s;
+        -ms-animation-delay: 1.05s;
+        -webkit-animation-delay: 1.05s;
+        -moz-animation-delay: 1.05s;
+}
+@keyframes loader{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@-o-keyframes loader{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@-ms-keyframes loader{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@-webkit-keyframes loader{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@-moz-keyframes loader{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+/* End */
+/* /local/templates/sng/components/bitrix/news.list/news-list/style.css?15752141592938 */

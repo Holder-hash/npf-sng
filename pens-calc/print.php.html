@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="../local/components/sng/calc/templates/.default/style.css">
+    <link rel="stylesheet" href="../local/markup/dist/css/style.bundle.css">
+    <link rel="stylesheet" href="print/style.css">
+    <script src="print/script.js"></script>
+    <title>Версия для печати</title>
+</head>
+<body><div class="date">
+    <div class="date__container">
+        <div class="data__image">
+            <img src="../local/markup/dist/img/logo.svg" alt="Логотип" class="date__logo">
+        </div>
+        <div>
+            <span id="calculatedDate" class="date__time">Ориентировочный расчёт на 10 августа 2023 г.</span>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="sng__box" style="background-color: transparent;box-shadow: none;">
+						<div class="sng__header">
+							<h1 class="sng__title">
+								Пенсионный калькулятор							</h1>
+						</div><div id="popup-calc-old" class="popup mfp-hide">
+    <div class="popup__form">
+        <div class="popup__header">
+            <div class="popup__title">Контакты</div>
+            <div class="popup__title-desc">Для расчёта желаемой пенсии обратитесь, пожалуйста, в офис Фонда лично или по телефону:</div>
+            <a class="popup__phone" href="tel:83462550577">8 (3462) 55-05-77</a>
+        </div>
+        <div class="js_global_error warning-small hide">
+            <span class="warning-small__text"></span>
+        </div>
+    </div>
+</div>
+<div class="calc">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                <div class="form-row d-flex justify-content-center align-items-center">
+                        <div class="form-group">
+                            <label for="date-birthday" class="col-form-label col-form-label-sm calc__label">Дата рождения</label>
+                            <input name="date-birthday" type="text" class="datepicker-here form-control form-control-sm calc__input" id="date-birthday" placeholder="__.__.____">
+                        </div>
+                        <div class="form-group">
+                            <legend class="col-form-label">Пол</legend>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="male" class="form-check-input" checked="">
+                                <label for="male" class="form-check-label calc__label">М</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="female" class="form-check-input">
+                                <label for="female" class="form-check-label calc__label">Ж</label>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+<!--                            <label for="salary" class="col-form-label col-form-label-md calc__label">Размер заработной платы, рублей в месяц</label>-->
+<!--                            <input name="salary" type="text" class="form-control form-control-sm calc__input calc__space" id="salary">-->
+                            <div class="form-check mt-4">
+                                <input type="checkbox" name="work-sng" class="form-check-input" id="work-sng">
+                                <label for="work-sng" class="form-check-label calc__label">Место работы ПАО «Сургутнефтегаз»</label>
+                                <span class="hint">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                        <g fill="none" fill-rule="evenodd"><path fill="#3764A0" d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z"></path><path fill="#FFF" d="M7 4h2v2H7zM7 7h2v5H7z"></path></g>
+                                    </svg>
+                                    <div class="hint__hide-wrap">
+                                        <span class="hint__hide">
+                                            <p>Для работников ПАО «Сургутнефтегаз» производится расчет в рамках корпоративной пенсионной программы «Партнёрство».</p>
+                                        </span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <iframe id="printFrame" style="display:none;"></iframe>
+                        <div class="calc_container-print">
+                            <div class="calc__print print_btn">
+                                <a class="print-btn open-link" href="/print.php" title="Нажмите для печати">
+                                    <svg width="24px" height="22px" viewbox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="UI" transform="translate(-772.000000, -328.000000)">
+                                                <g id="Icon/Print" transform="translate(772.000000, 328.000000)">
+                                                    <rect id="Rectangle-8" fill="#0069AA" fill-rule="evenodd" x="8" y="5" width="8" height="2" rx="1"></rect>
+                                                    <rect id="Rectangle-8-Copy-2" fill="#0069AA" fill-rule="evenodd" x="17" y="13" width="3" height="2" rx="1"></rect>
+                                                    <rect id="Rectangle-9" stroke="#0069AA" stroke-width="2" x="5" y="1" width="14" height="10" rx="2"></rect>
+                                                    <rect id="Rectangle-6" stroke="#0069AA" stroke-width="2" x="1" y="11" width="22" height="10" rx="2"></rect>
+                                                    <rect id="Rectangle-10" stroke="#0069AA" stroke-width="2" x="5" y="17" width="14" height="4" rx="1"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h6>Негосударственное пенсионное обеспечение</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <p class="calc__p">Узнайте размер будущей пенсии, исходя из величины взноса! <br>Сколько необходимо откладывать сегодня для достижения желаемого <br>уровня пенсии? Выберите удобные для вас параметры договора.</p>
+                </div>
+                <div class="col-4 offset-1">
+                    <div class="form-group">
+                        <label for="profit" class="form-check-label text__info calc__label">Доходность, % годовых</label>
+                        <span class="hint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                    <g fill="none" fill-rule="evenodd"><path fill="#3764A0" d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z"></path><path fill="#FFF" d="M7 4h2v2H7zM7 7h2v5H7z"></path></g>
+                                </svg>
+                                <div class="hint__hide-wrap">
+                                    <span class="hint__hide">
+                                        <p>Средний годовой инвестиционный доход АО «НПФ «Сургутнефтегаз» по программе НПО с 2009 по 2022 год – 9,36%</p>
+                                    </span>
+                                </div>
+                            </span>
+                        <div name="profit-output" id="profitOutput" class="text-success output" style="font-size: 30px !important; margin-left: 0px;">9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row calc__col">
+                <div class="col-4">
+                    <div class="form-group">
+                        <legend class="col-form-label calc__label text__info">Периодичность взносов</legend>
+                        <div class="form-check">
+                            <input type="radio" name="period" id="period-month" class="form-check-input" checked="">
+                            <label for="period-month" class="form-check-label calc__label">Ежемесячно</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="period" id="period-year" class="form-check-input">
+                            <label for="period-year" class="form-check-label calc__label">Ежегодно</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="period" id="period-one" class="form-check-input">
+                            <label for="period-one" class="form-check-label calc__label">Единовременно</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="calc__border" style="border: 2px solid #32a5a5;">
+                        <div class="form-group display">
+                            <label for="money-start" class="text__info calc__label">Размер взноса, рублей</label>
+                            <input name="money-start" type="text" class="form-control form-control-sm calc__input calc__space" id="money-start" style="border: 2px solid #ced4da;">
+                        </div>
+                        <div class="form-group mb-1 ">
+<!--                            <input type="range" name="percent-salary" class="form-control mb-1 calc__range calc__input" id="percentSalary" min="0" max="100" value="0" oninput="percentSalaryOutput.value = percentSalary.value">-->
+<!--                            <output name="percent-salary-output" id="percentSalaryOutput" class="text-success mr-2">0</output>-->
+                            <div class="form-check">
+                                <input type="checkbox" name="percent-check" class="form-check-input" id="percent-check">
+                                <output name="percent-salary-output" id="percentSalaryOutput" class="text-success mr-1">0</output>
+                                <label for="percent-check" class="form-check-label calc__label">% от заработной платы</label>
+                                <span class="hint">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                        <g fill="none" fill-rule="evenodd"><path fill="#3764A0" d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z"></path><path fill="#FFF" d="M7 4h2v2H7zM7 7h2v5H7z"></path></g>
+                                    </svg>
+                                    <div class="hint__hide-wrap">
+                                        <span class="hint__hide">
+                                            <p>Для расчёта % взносов по НПО используется заработная плата после вычета НДФЛ.</p>
+                                        </span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="salary" class="col-form-label col-form-label-md calc__label">Размер заработной платы, рублей в месяц</label>
+                            <input name="salary" type="text" class="form-control form-control-sm calc__input calc__space" id="salary" style="border: 2px solid #ced4da;">
+                        </div>
+                        <!-- <div class="form-group mb-0">
+                            <input type="range" name="percent-salary" class="form-control mb-1 calc__range calc__input" id="percentSalary" min="0" max="100" value="0" oninput="percentSalaryOutput.value = percentSalary.value" style="border: 2px solid #ced4da;">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-8 calc__img-box">
+                    <img class="calc__img-item" src="../local/markup/dist/img/old_day.png" alt="">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 mt-3">
+                    <div class="calc__border border-s" style="">
+                        <div class="form-group mb-0" style="">
+                            <label for="period-pay" class="form-check-label text__info calc__label">Срок выплат, лет</label>
+                            <span class="hint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                    <g fill="none" fill-rule="evenodd"><path fill="#3764A0" d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z"></path><path fill="#FFF" d="M7 4h2v2H7zM7 7h2v5H7z"></path></g>
+                                </svg>
+                                <div class="hint__hide-wrap">
+                                    <span class="hint__hide">
+                                        <p>Минимальный период выплат 5 лет</p>
+                                    </span>
+                                </div>
+                            </span>
+                            <div name="period-pay-output" id="periodPayOutput" class="text-success fs-30" style="">5</div>
+                        </div>
+                        <div class="form-group mb-0">
+                            <div class="form-check">
+                                <input type="checkbox" name="for-life" class="form-check-input" id="forever">
+                                <label for="north" class="form-check-label calc__label">Пожизненно</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="calc__result-box">
+                        <div class="calc__result-col">
+                            <div class="calc__result-text">
+                                Пенсия по договору НПО<br> за счет собственных взносов, рублей в месяц
+                            </div>
+                            <div class="calc__result-number text-success" id="pension_month"></div>
+                        </div>
+                        <div class="calc__result-col">
+                            <div class="calc__result-text">Корпоративная пенсия<br> от ПАО «Сургутнефтегаз», рублей в месяц</div>
+                            <div class="calc__result-number text-success" id="pension_corp"></div>
+                        </div>
+                    </div>
+                    <div class="calc__ad my-4">
+                        <div class="calc__result-col">
+                            <a href="https://client.npf-sng.ru/form-all" class="calc__ad-btn calc__button-decoration sng__link-medium" style="">Оформить договор НПО онлайн</a>
+                        </div>
+                    </div>
+                    <div class="calc__total">
+                        <div class="calc__total-box">
+                            <div class="text-center">
+                                За весь период накопления (<span id="savePeriodYear" class="calc__total-text">___</span> лет и
+                                <span id="savePeriodMonth" class="calc__total-text">___</span> месяца) на пенсионном счете сформировано
+                            </div>
+                            <div class="text-center">
+                                <span id="pension" class="calc__total-number">___</span> рублей.
+                            </div>
+                            <!-- <div class="text-center">
+                                включая инвестиционный доход, заработанный Фондом в размере <span class="calc__total-number">___</span> рублей.
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="calc__footer-box">
+                        <h5 class="calc__footer-title">Параметры расчета</h5>
+                        <ul class="calc__footer-list">
+                            <li class="calc__footer-item">период T на 2023 год - <span class="calc__footer-period">264</span> месяца.</li>
+                            <li class="calc__footer-item">расчет пенсии по негосударственному пенсионному обеспечению осуществляется исходя из пенсионного возраста 55 лет для женщин и 60 лет для мужчин.</li>
+                            <li class="calc__footer-item">таблица дожития на 2023 год.</li>
+                        </ul>
+                    </div>
+                    <div class="calc__footer-description">
+                        <p class="calc__footer-text" style="">Обращаем Ваше внимание, что калькулятор рассчитывает ориентировочный размер будущей негосударственной пенсии. Полученные расчеты не являются публичной офертой Фонда. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+				</div>
+<div class="prolog__container">
+    <p class="prolog__description">Обращаем внимание, что данный расчёт не является публичной офертой или окончательным. Возможно увеличение или уменьшение дохода от размещения средств пенсионных резервов и инвестирования средств пенсионных накоплений. Результаты инвестирования в прошлом не определяют доходов в будущем. Государство не гарантирует доходности размещения пенсионных резервов и инвестирования пенсионных накоплений. Необходимо внимательно ознакомиться с <a class="prolog__link" href="#">уставом фонда</a>, его <a class="prolog__link" href="#">пенсионными</a> и <a class="prolog__link" href="#">страховыми правилами</a> перед заключением пенсионного договора или переводом пенсионных накоплений в фонд.</p>
+</div>
+</body>
+<!-- <link rel="stylesheet" href="/local/components/sng/calc/templates/.default/style.css"> -->
+<!-- <link rel="stylesheet" href="/local/markup/dist/css/style.bundle.css"> -->

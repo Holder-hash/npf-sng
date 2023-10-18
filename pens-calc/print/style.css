@@ -1,0 +1,65 @@
+.date {
+    display: flex;align-items: flex-end;justify-content: end;
+}
+
+.date__container {
+    display: flex; gap: 15px;flex-direction: column;padding-right: 25px;padding-bottom: 25px;align-items: end;
+}
+
+.date__time {
+    font-size: 22px; color:  #767676; opacity: .5;
+}
+
+.date__logo {
+    margin-right: 0 !important;width: 85%; opacity: .5;
+}
+
+.date__image {
+    width: 450px;
+}
+
+.prolog__container {}
+
+.prolog__description {
+    color: #767676; opacity: .5; font-size: 19px; line-height: 1.20; padding: 25px 50px; text-align: justify; text-justify: inter-word;
+}
+
+.calc__footer-text {
+    opacity: .5;
+}
+
+.calc__button-decoration {
+    border: 2px solid #ff872f; text-decoration: none !important;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: space-between !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.border-s {
+    border: 2px solid #32a5a5;
+}
+
+.calc_container-print {
+    display: flex; align-self: stretch;
+}
+
+.prolog__link {
+    text-decoration: underline;
+}
