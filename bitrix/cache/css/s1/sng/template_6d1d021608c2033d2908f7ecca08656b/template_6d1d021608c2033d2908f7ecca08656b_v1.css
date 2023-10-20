@@ -14107,6 +14107,17 @@ header {
   margin-top: 20px
 }
 
+/*ops adaptation*/
+
+@media screen and (max-width: 1024px) {
+  .ops__box {
+    flex-direction: column;
+  }
+  .ops__info {
+    width: 100%;
+  }
+}
+
 .service {
   padding: 100px 0;
   background-color: #60a1ca;
