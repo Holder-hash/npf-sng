@@ -13299,6 +13299,13 @@ header {
 @media screen and (max-width: 1024px) {
   .news__link {
     height: auto;
+    width: 250px;
+  }
+  .news__body>.row {
+    justify-content: center;
+  }
+  .col-4 {
+    max-width: 100%;
   }
 }
 
