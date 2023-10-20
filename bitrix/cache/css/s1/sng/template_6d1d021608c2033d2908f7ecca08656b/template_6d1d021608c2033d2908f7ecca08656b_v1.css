@@ -20917,7 +20917,7 @@ header {
     min-width: auto;
   }
   .container, .wrapper {
-    min-width: 100% !important;
+    min-width: auto !important;
   }
 }
 
