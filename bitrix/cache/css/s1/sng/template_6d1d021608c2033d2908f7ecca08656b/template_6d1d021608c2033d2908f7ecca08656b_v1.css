@@ -12763,8 +12763,8 @@ header {
 
 .burger-menu {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid black;
   align-self: flex-end;
   align-items: center;
@@ -12803,10 +12803,10 @@ header {
     left: 0;
     top: 79px;
     flex-direction: column;
-    width: 300px;
-    align-items: center;
+    width: 200px;
+    align-items: flex-start !important;
     gap: 15px;
-    padding: 20px 0;
+    padding: 20px 16px;
     height: auto;
     background-color: white;
   }
@@ -12818,7 +12818,14 @@ header {
   }
   .nav__list-middle{
     width: 150px;
-    margin-left: 15px !important;
+    /* margin-left: 15px !important; */
+  }
+  .nav__list-right li:last-child {
+    margin-left: 0px !important;
+}
+
+  .adaptive__logo>img {
+    width: 190px;
   }
 
   .burger-open {
