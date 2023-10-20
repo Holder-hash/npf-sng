@@ -13299,14 +13299,15 @@ header {
 @media screen and (max-width: 1024px) {
   .news__link {
     height: auto;
-    width: 250px;
+    width: 100%;
   }
   .news__body>.row {
     justify-content: center;
   }
   .col-4 {
-    max-width: 100%;
+    min-width: 100%;
   }
+
 }
 
 .footer {
