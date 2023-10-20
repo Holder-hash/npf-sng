@@ -20968,10 +20968,10 @@ header {
 /*body adaptation*/
 @media screen and (max-width: 1024px) { 
   body {
-    min-width: auto;
+    min-width: 100%;
   }
   .container, .wrapper {
-    min-width: auto !important;
+    min-width: 100% !important;
   }
 }
 
