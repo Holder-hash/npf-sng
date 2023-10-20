@@ -12787,7 +12787,7 @@ header {
 /*header adaptation and burger*/
 @media screen and (max-width: 1024px) { 
   .head__sticky {
-    top: 265px;
+    top: 320px;
   }
   .header-col-12 {
     display: flex;
@@ -15956,6 +15956,13 @@ header {
 .slick__dots li.slick-active button:before {
   opacity: 1;
   content: url(../../../../../../local/markup/dist/img/dots_active8e10ceea5738c3cf6e10193679b18e14.svg)
+}
+
+/*slick-slider adaptation*/
+@media screen and (max-width:1024px) {
+  .slick-slider {
+    margin-top: 120px;
+  }
 }
 
 .hint {
