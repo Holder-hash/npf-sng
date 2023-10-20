@@ -14167,7 +14167,14 @@ header {
   align-items: flex-start
 }
 
+@media screen and (max-width: 1024px) {
 
+  .service__right {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+}
 
 .search-menu__list {
   -webkit-box-flex: 1;
