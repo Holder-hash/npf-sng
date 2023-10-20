@@ -13425,6 +13425,13 @@ header {
   text-decoration: underline
 }
 
+/*footer adaptation*/
+@media screen and (max-width: 1024px) {
+  .footer__content {
+    flex-direction: column;
+  }
+}
+
 #cert-grey {
   margin-top: 0 !important
 }
