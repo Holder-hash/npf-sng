@@ -14030,6 +14030,30 @@ header {
   .contract__box {
     flex-direction: column-reverse;
   }
+  .contract__hero {
+    width: 100%;
+  }
+  .contract__hero-number {
+    float: left;
+  }
+  .contract__info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contract___adaptBox {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    gap: 10px;
+  }
+
+  .contract__img {
+    width: 350px;
+    height: 190px;
+    display: block;
+    float: right;
+  }
 }
 
 .ops {
