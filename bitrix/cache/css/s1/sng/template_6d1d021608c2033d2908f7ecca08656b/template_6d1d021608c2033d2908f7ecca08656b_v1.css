@@ -14047,6 +14047,7 @@ header {
     height: inherit;
     display: flex;
     gap: 10px;
+    align-items: center;
   }
 
   .contract__img {
