@@ -13430,6 +13430,9 @@ header {
   .footer__content {
     flex-direction: column;
   }
+  .d-flex {
+    margin-top: 10px;
+  }
 }
 
 #cert-grey {
