@@ -12585,15 +12585,7 @@ body {
   min-width: 1406px
 }
 
-/*body adaptation*/
-@media screen and (max-width: 1024px) { 
-  body {
-    min-width: auto;
-  }
-  .container, .wrapper {
-    min-width: auto !important;
-  }
-}
+
 
 *,
 :after,
@@ -14031,6 +14023,13 @@ header {
 
 .contract__img {
   margin-left: 40%
+}
+
+/*contract adaptation*/
+@media screen and (max-width: 1024px) {
+  .contract__box {
+    flex-direction: column-reverse;
+  }
 }
 
 .ops {
@@ -20885,6 +20884,16 @@ header {
 
   .cookie__item:first-child {
     margin-right: 0 !important;
+  }
+}
+
+/*body adaptation*/
+@media screen and (max-width: 1024px) { 
+  body {
+    min-width: auto;
+  }
+  .container, .wrapper {
+    min-width: 100% !important;
   }
 }
 
