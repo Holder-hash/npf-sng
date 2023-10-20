@@ -12802,14 +12802,16 @@ header {
     display: none !important;
     position: absolute;
     left: 0;
-    top: 75px;
-    flex-direction: column;
+    top: 75.7px;
     width: 200px;
+    height: auto;
+    padding: 20px 16px;
+    flex-direction: column;
     align-items: flex-start !important;
     gap: 15px;
-    padding: 20px 16px;
-    height: auto;
     background-color: white;
+    border-right: 2px solid #0069aa;
+    border-bottom: 2px solid #0069aa;
   }
   .burger-menu {
     display: flex;
