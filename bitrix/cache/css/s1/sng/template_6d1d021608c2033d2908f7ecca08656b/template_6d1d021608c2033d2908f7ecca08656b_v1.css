@@ -13294,6 +13294,14 @@ header {
   text-align: center
 }
 
+/*news adaptation*/
+
+@media screen and (max-width: 1024px) {
+  .news__link {
+    height: auto;
+  }
+}
+
 .footer {
   background-color: #3764a0;
   color: #fff;
