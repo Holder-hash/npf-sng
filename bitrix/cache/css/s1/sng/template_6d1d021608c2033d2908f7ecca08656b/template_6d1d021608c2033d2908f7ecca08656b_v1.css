@@ -20976,7 +20976,7 @@ header {
 
   .cookie__body {
     max-height: 178px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .cookie__body>h5 {
     margin-left: 10px;
