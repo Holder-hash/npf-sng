@@ -12786,8 +12786,11 @@ header {
 
 /*header adaptation and burger*/
 @media screen and (max-width: 1024px) { 
+  .head {
+    height: 100px;
+  }
   .head__sticky {
-    top: 320px;
+    top: 240px;
   }
   .header-col-12 {
     display: flex;
@@ -14069,11 +14072,18 @@ header {
   }
 
   .contract___adaptBox {
+    display: flex;
     width: 100%;
     height: inherit;
-    display: flex;
-    gap: 10px;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
+  }
+  .contract__hero-title {
+    font-size: 30px;
+  }
+  .contract__hero-subtitle {
+    width: 100%;
   }
 
   .contract__img {
@@ -14142,6 +14152,9 @@ header {
   .ops__info {
     width: 100%;
   }
+  .ops__img {
+    min-width: 480px;
+  }
 }
 
 .service {
@@ -14206,6 +14219,7 @@ header {
   align-items: flex-start
 }
 
+/*service adaptation*/
 @media screen and (max-width: 1024px) {
 
   .service__right {
@@ -20946,6 +20960,10 @@ header {
     flex-direction: column;
   }
 
+  .cookie__body {
+    max-height: 178px;
+    overflow: scroll;
+  }
   .cookie__body>h5 {
     margin-left: 10px;
   }
@@ -20969,13 +20987,16 @@ header {
   }
 }
 
-/*body adaptation*/
+/*body adaptation (global)*/
 @media screen and (max-width: 1024px) { 
   body {
     min-width: 100%;
   }
   .container, .wrapper {
     min-width: 100% !important;
+  }
+  .main__sticky {
+    margin-top: 196px
   }
 }
 
