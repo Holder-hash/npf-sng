@@ -12778,10 +12778,10 @@ header {
   transition: .3s;
 }
 .burger-menu span:nth-child(1) {
-  transform: translateY(-11px);
+  transform: translateY(-10.5px);
 }
-.burger-menu span:nth-child(2) {
-  transform: translateY(13px);
+.burger-menu span:nth-child(3) {
+  transform: translateY(10.5px);
 }
 
 /*header adaptation and burger*/
@@ -12801,7 +12801,7 @@ header {
     display: none !important;
     position: absolute;
     left: 0;
-    top: 79px;
+    top: 75px;
     flex-direction: column;
     width: 200px;
     align-items: flex-start !important;
