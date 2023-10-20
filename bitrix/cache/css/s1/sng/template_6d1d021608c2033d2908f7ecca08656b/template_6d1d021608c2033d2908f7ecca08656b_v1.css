@@ -12765,16 +12765,18 @@ header {
   display: none;
   width: 40px;
   height: 40px;
-  border: 1px solid black;
   align-self: flex-end;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #3764a0;
+  border: 1px solid #b3cce6;
+  border-radius: 5px;
 }
 .burger-menu span {
   width: 80%;
   height: 1px;
-  background-color: black;
+  background-color: #b3cce6;
   transition: .3s;
 }
 .burger-menu span:nth-child(1) {
