@@ -3170,7 +3170,7 @@ pre code {
 }
 
 .col-12 {
-  display: flex;
+  /* display: flex; */
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -12789,7 +12789,8 @@ header {
   .head__sticky {
     top: 265px;
   }
-  .col-12 {
+  .header-col-12 {
+    display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
