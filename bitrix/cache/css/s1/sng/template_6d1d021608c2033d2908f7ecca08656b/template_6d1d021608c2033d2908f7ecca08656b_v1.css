@@ -12758,6 +12758,9 @@ header {
 /* burger menu */
 
 .adaptive__logo {
+  display: block;
+}
+.desktop_logo {
   display: none;
 }
 
@@ -12798,6 +12801,10 @@ header {
     justify-content: space-between;
     flex-direction: row-reverse;
   }
+  .desktop_logo {
+    width: 190px;
+    display: block;
+  }
   .nav {
     display: none !important;
     position: absolute;
@@ -12817,7 +12824,7 @@ header {
     display: flex;
   }
   .adaptive__logo {
-    display: block;
+    display: none;
   }
   .nav__list-middle{
     width: 150px;
