@@ -12802,9 +12802,13 @@ header {
     flex-direction: row-reverse;
   }
   .desktop_logo {
-    width: 190px;
     display: block;
+    margin-right: 10px;
   }
+  .desktop_logo>img {
+    width: 190px;
+  }
+
   .nav {
     display: none !important;
     position: absolute;
