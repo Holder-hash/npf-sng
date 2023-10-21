@@ -16054,6 +16054,30 @@ header {
     background-image: none;
   }
 }
+@media screen and (max-width: 560px) {
+  .hero__title {
+    max-width: 350px;
+  }
+  .hero__title-adaptation {
+    width: 100%;
+  }
+  .hero__description {
+    max-width: 350px;
+  }
+  .hero__img-adaptation {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .hero__img-2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero__img-1 {
+    display: none !important;
+  }
+}
 
 .hint {
   position: relative;
