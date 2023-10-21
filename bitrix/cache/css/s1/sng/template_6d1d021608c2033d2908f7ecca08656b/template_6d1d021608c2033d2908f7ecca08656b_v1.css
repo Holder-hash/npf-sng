@@ -13975,6 +13975,17 @@ header {
   text-decoration: underline
 }
 
+@media screen and (max-width: 1024px) {
+  .panel {
+    display: none;
+    z-index: 0;
+  }
+  .bg {
+    z-index: 0 !important;
+    display: none;
+  }
+}
+
 .bg {
   position: absolute;
   min-width: 1406px;
