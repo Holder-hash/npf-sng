@@ -16030,6 +16030,29 @@ header {
   .slick-slider {
     margin-top: 120px;
   }
+  .hero__adaptation-elem {
+    width: 300px;
+  }
+  .hero__img-adaptation {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: auto;
+    margin: 0 !important;
+  }
+  .hero__title {
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 450px;
+  }
+  .hero__description {
+    max-width: 550px;
+    line-height: 1.5;
+  }
+
+  .hero__item-fond_28 {
+    background-image: none;
+  }
 }
 
 .hint {
