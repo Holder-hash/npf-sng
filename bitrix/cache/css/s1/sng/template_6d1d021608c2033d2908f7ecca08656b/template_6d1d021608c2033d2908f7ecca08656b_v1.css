@@ -21100,6 +21100,10 @@ header {
   .calc-banner__body span{
     display: none;
   }
+  .footer__calc {
+    top: 60%;
+    transform: translate(0,-60%);
+  }
 }
 
 /* End */
