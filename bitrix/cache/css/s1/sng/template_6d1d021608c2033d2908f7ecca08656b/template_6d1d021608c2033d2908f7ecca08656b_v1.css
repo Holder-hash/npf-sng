@@ -21094,6 +21094,9 @@ header {
   .main__sticky {
     margin-top: 196px
   }
+  .calc-banner__body span{
+    display: none;
+  }
 }
 
 /* End */
