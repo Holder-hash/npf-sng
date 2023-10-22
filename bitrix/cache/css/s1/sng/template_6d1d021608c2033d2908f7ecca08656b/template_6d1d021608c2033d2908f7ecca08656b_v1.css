@@ -13978,6 +13978,16 @@ header {
   text-decoration: underline
 }
 
+.panel__item-box {
+  height: 200px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.nav__fond-li.nav-fond-open ~ .panel__item-box {
+  display: block;
+}
+
 @media screen and (max-width: 1024px) {
   .panel {
     display: none;

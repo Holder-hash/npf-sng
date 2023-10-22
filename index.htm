@@ -78,10 +78,19 @@
                             </a>
 
                             <ul class="nav__list nav__list-middle">
-                                <li class="nav__item"><a href="history/index.htm" class="nav__link nav__open" data-menu-id="fond">О Фонде</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="fiz-liz/index.htm" class="nav__link nav__open" data-menu-id="program">Программы</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="results/index.htm" class="nav__link nav__open" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="our-clients/index.htm" class="nav__link nav__open" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item nav__fond-li"><a href="history/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="fond">О Фонде</a>
+                                    <div class="nav__arrow arrow nav__item-fond"></div>                
+                                    <div class="panel__item-box">
+                                        <div class="panel__item"><a href="history/index.htm" class="panel__link">История</a><div class="arrow"></div></div>
+                                        <div class="panel__item"><a href="news/index.htm" class="panel__link">Новости</a><div class="arrow"></div></div>
+                                        <div class="panel__item"><a href="allinfo/index.htm" class="panel__link">Раскрытие информации</a><div class="arrow"></div></div>
+                                        <div class="panel__item"><a href="rekvisit/index.htm" class="panel__link">Официальные реквизиты</a><div class="arrow"></div></div>
+                                        <div class="panel__item"><a href="zakon/index.htm" class="panel__link">Законодательство</a><div class="arrow"></div></div>
+                                        <div class="panel__item"><a href="links/index.htm" class="panel__link">Полезные ссылки</a><div class="arrow"></div></div>
+                                    </div></li>
+                                <li class="nav__item"><a href="fiz-liz/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="program">Программы</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item"><a href="results/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item"><a href="our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
                             </ul>
                             <ul class="nav__list nav__list-right">
                                 <li class="nav__item d-flex">
@@ -143,7 +152,7 @@
                                     <div class="panel__title-body"></div>
                                 </div>
                                 <div class="panel__list">
-                                    <div class="panel__body">
+                                    <div class="panel__body panel__body-fond">
                                         <div class="panel__col">
                                             <div class="panel__item"><a href="history/index.htm" class="panel__link">История</a><div class="arrow"></div></div>
                                             <div class="panel__item"><a href="news/index.htm" class="panel__link">Новости</a><div class="arrow"></div></div>
@@ -983,6 +992,37 @@
 <script>
     document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').classList.toggle('burger-open');
+    })
+</script>
+<!-- panel -->
+<script>
+    const panel = document.querySelector('.panel__body-fond');
+    const navItemFond = document.querySelector('.nav__item-fond')
+    const navListLink = document.querySelectorAll('.nav__list-link');
+    navListLink.forEach(navLinkElement => {
+        navLinkElement.addEventListener('click', (e) => {
+            e.preventDefault()
+            document.querySelector('.nav__fond-li').onclick = () => {
+                document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open')
+                if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box').style = 'display:block'
+                }
+                else {
+                    document.querySelector('.panel__item-box').style = 'display:none'
+                }
+            }
+
+            // navItemFond.insertAdjacentHTML("afterend", `
+            //     <div class="panel__item-box">
+            //         <div class="panel__item"><a href="history/index.htm" class="panel__link">История</a><div class="arrow"></div></div>
+            //         <div class="panel__item"><a href="news/index.htm" class="panel__link">Новости</a><div class="arrow"></div></div>
+            //         <div class="panel__item"><a href="allinfo/index.htm" class="panel__link">Раскрытие информации</a><div class="arrow"></div></div>
+            //         <div class="panel__item"><a href="rekvisit/index.htm" class="panel__link">Официальные реквизиты</a><div class="arrow"></div></div>
+            //         <div class="panel__item"><a href="zakon/index.htm" class="panel__link">Законодательство</a><div class="arrow"></div></div>
+            //         <div class="panel__item"><a href="links/index.htm" class="panel__link">Полезные ссылки</a><div class="arrow"></div></div>
+            //     </div>
+            // `); 
+        })
     })
 </script>
 </body>
