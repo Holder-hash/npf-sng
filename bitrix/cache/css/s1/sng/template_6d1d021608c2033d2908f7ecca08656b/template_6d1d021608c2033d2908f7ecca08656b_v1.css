@@ -16030,9 +16030,6 @@ header {
 
 /*slick-slider adaptation*/
 @media screen and (max-width:1024px) {
-  .slick-slider {
-    margin-top: 120px;
-  }
   .hero__adaptation-elem {
     width: 300px;
   }
@@ -21094,9 +21091,9 @@ header {
   .container, .wrapper {
     min-width: 100% !important;
   }
-  .main__sticky {
-    margin-top: 196px
-  }
+  /* .main__sticky {
+    margin-top: 196px !important;
+  } */
   .calc-banner__body span{
     display: none;
   }
