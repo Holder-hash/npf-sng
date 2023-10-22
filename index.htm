@@ -1005,10 +1005,12 @@
             document.querySelector('.nav__fond-li').onclick = () => {
                 document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open')
                 if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
-                    document.querySelector('.panel__item-box').style = 'display:block'
+                    document.querySelector('.panel__item-box').style = 'display:block';
+                    document.querySelector('.nav__item-fond').style = 'transform: rotate(45deg);'
                 }
                 else {
                     document.querySelector('.panel__item-box').style = 'display:none'
+                    document.querySelector('.nav__item-fond').style = 'transform: rotate(-45deg);'
                 }
             }
 
