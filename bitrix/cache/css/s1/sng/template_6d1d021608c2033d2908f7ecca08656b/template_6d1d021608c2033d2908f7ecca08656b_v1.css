@@ -12841,7 +12841,7 @@ header {
     display: none;
   }
   .nav__list-middle{
-    width: 150px;
+    width: 155px;
     /* margin-left: 15px !important; */
   }
   .nav__list-right li:last-child {
@@ -12862,6 +12862,23 @@ header {
   }
   nav.burger-open ~ .burger-menu>.burger-close-svg {
     display: block;
+  }
+
+  /*burger panel*/
+  .panel__item-box-fond {
+    margin-left: 15px !important;
+  }
+  .panel__link{
+    font-size: 14px !important;
+    color: #0069aa;
+    font-weight: 400;
+    margin: 0 !important;
+  }
+  .panel__item {
+    margin-bottom: 0;
+  }
+  .nav__link {
+    font-weight: bold;
   }
 }
 
