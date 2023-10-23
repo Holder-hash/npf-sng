@@ -102,7 +102,13 @@
                                     <div class="panel__item"><a href="results/NPO/index.htm" class="panel__link">Инвестиционная политика НПО</a></div>
                                     <div class="panel__item"><a href="/results/UK" class="panel__link">Сведения об управляющих компаниях</a></div>
                                 </div></li>
-                                <li class="nav__item nav__our-clients-li"><a href="our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item nav__our-clients-li"><a href="our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow nav__arrow-ourClients"></div>
+                                <div class="panel__item-box-ourClients">
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Обязательное пенсионное страхование</a></div>                                      
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Негосударственное пенсионное обеспечение</a></div>
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Негосударственная пенсия от работодателя ПАО «Сургутнефтегаз»</a></div>
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Другое</a><div class="arrow"></div></div>
+                                </div></li>
                             </ul>
                             <ul class="nav__list nav__list-right">
                                 <li class="nav__item d-flex">
@@ -1042,6 +1048,16 @@
                 } else {
                     document.querySelector('.panel__item-box-results').style = 'display:none'
                     document.querySelector('.nav__arrow-results').style = 'transform: rotate(-45deg);'
+                }
+            }
+            document.querySelector('.nav__our-clients-li').onclick = () => {
+                document.querySelector('.nav__our-clients-li').classList.toggle('nav-fond-open')
+                if (document.querySelector('.nav__our-clients-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-ourClients').style = 'display:block';
+                    document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-ourClients').style = 'display:none'
+                    document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(-45deg);'
                 }
             }
         })
