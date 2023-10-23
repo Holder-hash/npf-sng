@@ -12868,6 +12868,12 @@ header {
   .panel__item-box-fond {
     margin-left: 15px !important;
   }
+  .panel__item-box-program {
+    margin-left: 15px !important;
+  }
+  .panel__item-box-results {
+    margin-left: 15px !important;
+  }
   .panel__link{
     font-size: 14px !important;
     color: #0069aa;
@@ -14019,12 +14025,7 @@ header {
     z-index: 0 !important;
     display: none;
   }
-  .panel__item-box-fond {
-    margin-left: 5px;
-  }
-  .panel__item-box-program {
-    margin-left: 5px;
-  }
+
   .panel__item {
     margin-bottom: 3px;
 }
