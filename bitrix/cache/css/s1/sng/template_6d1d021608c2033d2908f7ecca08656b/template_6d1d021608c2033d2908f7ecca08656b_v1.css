@@ -13978,14 +13978,15 @@ header {
   text-decoration: underline
 }
 
-.panel__item-box {
+.panel__item-box-fond {
   height: 200px;
   overflow-y: scroll;
   display: none;
 }
-
-.nav__fond-li.nav-fond-open ~ .panel__item-box {
-  display: block;
+.panel__item-box-program {
+  height: 200px;
+  overflow-y: scroll;
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -13997,6 +13998,15 @@ header {
     z-index: 0 !important;
     display: none;
   }
+  .panel__item-box-fond {
+    margin-left: 5px;
+  }
+  .panel__item-box-program {
+    margin-left: 5px;
+  }
+  .panel__item {
+    margin-bottom: 3px;
+}
 }
 
 .bg {
