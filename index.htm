@@ -96,7 +96,12 @@
                                         <div class="panel__item"><a href="fiz-liz/Part/index.htm" class="panel__link">Программа «Партнерство»</a></div>
                                          <div class="panel__item"><a href="fiz-liz/sved/index.htm" class="panel__link">Для обязательного сведения</a></div>
                                     </div></li>
-                                <li class="nav__item nav__results-li"><a href="results/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item nav__results-li"><a href="results/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow nav__arrow-results"></div>
+                                <div class="panel__item-box-results">
+                                    <div class="panel__item"><a href="results/OPS/index.htm" class="panel__link">Инвестиционная политика ОПС</a></div>
+                                    <div class="panel__item"><a href="results/NPO/index.htm" class="panel__link">Инвестиционная политика НПО</a></div>
+                                    <div class="panel__item"><a href="/results/UK" class="panel__link">Сведения об управляющих компаниях</a></div>
+                                </div></li>
                                 <li class="nav__item nav__our-clients-li"><a href="our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
                             </ul>
                             <ul class="nav__list nav__list-right">
@@ -1027,6 +1032,16 @@
                 } else {
                     document.querySelector('.panel__item-box-program').style = 'display:none'
                     document.querySelector('.nav__arrow-program').style = 'transform: rotate(-45deg);'
+                }
+            }
+            document.querySelector('.nav__results-li').onclick = () => {
+                document.querySelector('.nav__results-li').classList.toggle('nav-fond-open')
+                if (document.querySelector('.nav__results-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-results').style = 'display:block';
+                    document.querySelector('.nav__arrow-results').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-results').style = 'display:none'
+                    document.querySelector('.nav__arrow-results').style = 'transform: rotate(-45deg);'
                 }
             }
         })

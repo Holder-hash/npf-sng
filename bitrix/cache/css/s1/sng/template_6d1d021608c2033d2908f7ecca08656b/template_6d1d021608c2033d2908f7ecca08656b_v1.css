@@ -13998,12 +13998,16 @@ header {
 }
 
 .panel__item-box-fond {
-  height: 200px;
+  height: auto;
   display: none;
 }
 .panel__item-box-program {
-  height: 200px;
+  height: auto;
   display: none;
+}
+.panel__item-box-results {
+  height: auto;
+  display: none; 
 }
 
 @media screen and (max-width: 1024px) {
