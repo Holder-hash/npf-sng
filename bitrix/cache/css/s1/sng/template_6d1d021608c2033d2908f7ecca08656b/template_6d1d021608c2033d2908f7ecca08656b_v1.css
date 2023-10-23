@@ -12776,7 +12776,7 @@ header {
   height: 40px;
   align-self: flex-end;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   /* background: url('https://client.npf-sng.ru/local/markup/build/svg/menu.svg');
   background-position: center;
