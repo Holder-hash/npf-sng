@@ -1021,7 +1021,13 @@
         navLinkElement.addEventListener('click', (e) => {
             e.preventDefault()
             document.querySelector('.nav__fond-li').onclick = () => {
-                document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
                 if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-fond').style = 'display:block';
                     document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);'
@@ -1032,6 +1038,12 @@
             }
             document.querySelector('.nav__program-li').onclick = () => {
                 document.querySelector('.nav__program-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
                 if (document.querySelector('.nav__program-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-program').style = 'display:block';
                     document.querySelector('.nav__arrow-program').style = 'transform: rotate(45deg);'
@@ -1042,6 +1054,12 @@
             }
             document.querySelector('.nav__results-li').onclick = () => {
                 document.querySelector('.nav__results-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
                 if (document.querySelector('.nav__results-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-results').style = 'display:block';
                     document.querySelector('.nav__arrow-results').style = 'transform: rotate(45deg);'
@@ -1052,6 +1070,12 @@
             }
             document.querySelector('.nav__our-clients-li').onclick = () => {
                 document.querySelector('.nav__our-clients-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
                 if (document.querySelector('.nav__our-clients-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-ourClients').style = 'display:block';
                     document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(45deg);'
