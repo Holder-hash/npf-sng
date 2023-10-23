@@ -12818,12 +12818,14 @@ header {
   }
 
   .nav {
+    flex-wrap: nowrap;
+    overflow-y: scroll;
     display: none !important;
     position: absolute;
     left: 0;
     top: 75.7px;
     width: 200px;
-    height: auto;
+    height: 351px;
     padding: 20px 16px;
     flex-direction: column;
     align-items: flex-start !important;
@@ -13980,12 +13982,10 @@ header {
 
 .panel__item-box-fond {
   height: 200px;
-  overflow-y: scroll;
   display: none;
 }
 .panel__item-box-program {
   height: 200px;
-  overflow-y: scroll;
   display: none;
 }
 
