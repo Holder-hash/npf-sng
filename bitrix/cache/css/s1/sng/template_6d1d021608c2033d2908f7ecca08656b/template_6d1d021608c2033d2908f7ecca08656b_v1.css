@@ -12832,7 +12832,7 @@ header {
     gap: 15px;
     background-color: white;
     z-index: 9999;
-    justify-content: stretch !important;
+    justify-content: center !important;
     align-items: center !important;
     padding-bottom: 120px;
   }
