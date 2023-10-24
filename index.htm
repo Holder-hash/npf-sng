@@ -78,10 +78,37 @@
                             </a>
 
                             <ul class="nav__list nav__list-middle">
-                                <li class="nav__item"><a href="history/index.htm" class="nav__link nav__open" data-menu-id="fond">О Фонде</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="fiz-liz/index.htm" class="nav__link nav__open" data-menu-id="program">Программы</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="results/index.htm" class="nav__link nav__open" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="our-clients/index.htm" class="nav__link nav__open" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item nav__fond-li"><a href="history/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="fond">О Фонде</a>
+                                    <div class="nav__arrow arrow nav__arrow-fond"></div>                
+                                    <div class="panel__item-box-fond">
+                                        <div class="panel__item"><a href="history/index.htm" class="panel__link">История</a></div>
+                                        <div class="panel__item"><a href="news/index.htm" class="panel__link">Новости</a></div>
+                                        <div class="panel__item"><a href="allinfo/index.htm" class="panel__link">Раскрытие информации</a></div>
+                                        <div class="panel__item"><a href="rekvisit/index.htm" class="panel__link">Официальные реквизиты</a>
+                                        <div class="panel__item"><a href="zakon/index.htm" class="panel__link">Законодательство</a></div>
+                                        <div class="panel__item"><a href="links/index.htm" class="panel__link">Полезные ссылки</a></div>
+                                    </div></li>
+                                <li class="nav__item nav__program-li"><a href="fiz-liz/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="program">Программы</a><div class="nav__arrow arrow nav__arrow-program"></div>
+                                    <div class="panel__item-box-program">
+                                        <div class="panel__item"><a href="fiz-liz/NPO/index.htm" class="panel__link">Негосударственное пенсионное обеспечение</a></div>
+                                        <div class="panel__item"><a href="fiz-liz/OPS/index.htm" class="panel__link">Обязательное пенсионное страхование</a></div>
+                                        <div class="panel__item"><a href="fiz-liz/sofinance/index.htm" class="panel__link">Программа «Софинансирование»</a></div>
+                                        <div class="panel__item"><a href="fiz-liz/Part/index.htm" class="panel__link">Программа «Партнерство»</a></div>
+                                         <div class="panel__item"><a href="fiz-liz/sved/index.htm" class="panel__link">Для обязательного сведения</a></div>
+                                    </div></li>
+                                <li class="nav__item nav__results-li"><a href="results/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow nav__arrow-results"></div>
+                                <div class="panel__item-box-results">
+                                    <div class="panel__item"><a href="results/OPS/index.htm" class="panel__link">Инвестиционная политика ОПС</a></div>
+                                    <div class="panel__item"><a href="results/NPO/index.htm" class="panel__link">Инвестиционная политика НПО</a></div>
+                                    <div class="panel__item"><a href="/results/UK" class="panel__link">Сведения об управляющих компаниях</a></div>
+                                </div></li>
+                                <li class="nav__item nav__our-clients-li"><a href="our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow nav__arrow-ourClients"></div>
+                                <div class="panel__item-box-ourClients">
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Обязательное пенсионное страхование</a></div>                                      
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Негосударственное пенсионное обеспечение</a></div>
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Негосударственная пенсия от работодателя ПАО «Сургутнефтегаз»</a></div>
+                                    <div class="panel__item"><a href="our-clients/index.htm" class="panel__link">Другое</a></div>
+                                </div></li>
                             </ul>
                             <ul class="nav__list nav__list-right">
                                 <li class="nav__item d-flex">
@@ -143,7 +170,7 @@
                                     <div class="panel__title-body"></div>
                                 </div>
                                 <div class="panel__list">
-                                    <div class="panel__body">
+                                    <div class="panel__body panel__body-fond">
                                         <div class="panel__col">
                                             <div class="panel__item"><a href="history/index.htm" class="panel__link">История</a><div class="arrow"></div></div>
                                             <div class="panel__item"><a href="news/index.htm" class="panel__link">Новости</a><div class="arrow"></div></div>
@@ -193,7 +220,7 @@
                                         </div>
                                         <div class="panel__body">
                                             <div class="panel__col">
-                                                <div class="panel__item"><a href="fiz-liz/yur-liz/index.htm" class="panel__link">Информация для юридических лиц</a><div class="arrow"></div></div>
+                                                <div class="panel__item"><a href="fiz-liz/yur-liz/index.htm" class="panel__link">Информация для юридических лиц</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -983,6 +1010,81 @@
 <script>
     document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').classList.toggle('burger-open');
+    })
+</script>
+<!-- panel -->
+<script>
+    const panel = document.querySelector('.panel__body-fond');
+    const navItemFond = document.querySelector('.nav__item-fond')
+    const navListLink = document.querySelectorAll('.nav__list-link');
+    navListLink.forEach(navLinkElement => {
+        navLinkElement.addEventListener('click', (e) => {
+            e.preventDefault()
+            document.querySelector('.nav__fond-li').onclick = () => {
+                document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
+                if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-fond').style = 'display:block';
+                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-fond').style = 'display:none'
+                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(-45deg);'
+                }
+            }
+            document.querySelector('.nav__program-li').onclick = () => {
+                document.querySelector('.nav__program-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
+                if (document.querySelector('.nav__program-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-program').style = 'display:block';
+                    document.querySelector('.nav__arrow-program').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-program').style = 'display:none'
+                    document.querySelector('.nav__arrow-program').style = 'transform: rotate(-45deg);'
+                }
+            }
+            document.querySelector('.nav__results-li').onclick = () => {
+                document.querySelector('.nav__results-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-ourClients').style = 'display:none';
+                if (document.querySelector('.nav__results-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-results').style = 'display:block';
+                    document.querySelector('.nav__arrow-results').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-results').style = 'display:none'
+                    document.querySelector('.nav__arrow-results').style = 'transform: rotate(-45deg);'
+                }
+            }
+            document.querySelector('.nav__our-clients-li').onclick = () => {
+                document.querySelector('.nav__our-clients-li').classList.toggle('nav-fond-open')
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-fond').style = 'display:none';
+                document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-program').style = 'display:none';
+                document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
+                document.querySelector('.panel__item-box-results').style = 'display:none';
+                if (document.querySelector('.nav__our-clients-li').classList.contains('nav-fond-open')) {
+                    document.querySelector('.panel__item-box-ourClients').style = 'display:block';
+                    document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(45deg);'
+                } else {
+                    document.querySelector('.panel__item-box-ourClients').style = 'display:none'
+                    document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(-45deg);'
+                }
+            }
+        })
     })
 </script>
 </body>
