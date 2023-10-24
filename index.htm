@@ -1011,14 +1011,14 @@
     document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').classList.toggle('burger-open');
         if (document.querySelector('nav').classList.contains('burger-open')) {
-            document.querySelector('nav').style = `top: 100px`
+            document.querySelector('nav').style = `top: 78px`
             document.querySelector('.head').style = 'top: 0';
             document.querySelector('#header__cookie'). style = 'display: none'
         }
         else {
             document.querySelector('nav').style = `top: 0`
             document.querySelector('.head').style = 'top: 240px';
-            document.querySelector('#header__cookie'). style = 'display: block'
+            document.querySelector('#header__cookie').style = 'display: block'
         }
     })
 </script>
@@ -1029,7 +1029,7 @@
     const navListLink = document.querySelectorAll('.nav__list-link');
     navListLink.forEach(navLinkElement => {
         navLinkElement.addEventListener('click', (e) => {
-            e.preventDefault()
+            e.preventDefault();
             document.querySelector('.nav__fond-li').onclick = () => {
                 document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
                 document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
