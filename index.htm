@@ -137,7 +137,7 @@
                                 </li>
                             </ul>
                             <ul class="nav__list">
-                                <li class="nav__item d-flex flex-column align-items-center justify-content-center">
+                                <li class="nav__last__child nav__item d-flex flex-column align-items-center justify-content-center">
                                     <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative" target="_blank">
                                         Личный кабинет
                                     </a>
@@ -1013,12 +1013,13 @@
         if (document.querySelector('nav').classList.contains('burger-open')) {
             document.querySelector('nav').style = `top: 78px`
             document.querySelector('.head').style = 'top: 0';
-            document.querySelector('#header__cookie'). style = 'display: none'
-        }
-        else {
-            document.querySelector('nav').style = `top: 0`
+            document.querySelector('#header__cookie'). style = 'display: none';
+            document.querySelector('.footer__calc').style = `display: none`;
+        } else {
+            document.querySelector('nav').style = `top: 0`;
             document.querySelector('.head').style = 'top: 240px';
-            document.querySelector('#header__cookie').style = 'display: block'
+            document.querySelector('#header__cookie').style = 'display: block';
+            document.querySelector('.footer__calc').style = `display: block`;
         }
     })
 </script>

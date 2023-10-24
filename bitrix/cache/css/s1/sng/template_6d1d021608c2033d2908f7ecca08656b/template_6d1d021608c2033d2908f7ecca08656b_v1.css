@@ -12833,7 +12833,7 @@ header {
     background-color: white;
     z-index: 9999;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     padding-bottom: 120px;
   }
   .burger-menu {
@@ -12847,9 +12847,7 @@ header {
     display: flex !important;
     flex-direction: column;
     /* margin-left: 15px !important; */
-  }
-  .nav__list-middle li {
-    margin-right: 0 !important;
+    align-items: flex-start !important;
   }
 
   .adaptive__logo>img {
@@ -12897,6 +12895,10 @@ header {
     font-weight: bold;
     margin-bottom: 10px;
   }
+
+  .nav__last__child {
+    align-items: flex-start !important;
+  }
 }
 
 
@@ -12929,10 +12931,6 @@ header {
 
 .nav__list-middle li {
   margin-right: 1em
-}
-
-.nav__list-right li:last-child {
-  margin-left: 1.1em
 }
 
 .nav__item {
