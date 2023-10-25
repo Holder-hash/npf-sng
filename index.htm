@@ -136,7 +136,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="nav__list">
+                            <ul class="nav__list nav__list__lastChild">
                                 <li class="nav__last__child nav__item d-flex flex-column align-items-center justify-content-center">
                                     <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative" target="_blank">
                                         Личный кабинет
@@ -1008,6 +1008,8 @@
 
 <!-- burger menu -->
 <script>
+    const panelEndWrapper = document.createElement('div');
+    panelEndWrapper.classList.toggle('panelEndWrapper')
     document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').classList.toggle('burger-open');
         if (document.querySelector('nav').classList.contains('burger-open')) {
@@ -1015,6 +1017,11 @@
             document.querySelector('.head').style = 'top: 0';
             document.querySelector('#header__cookie'). style = 'display: none';
             document.querySelector('.footer__calc').style = `display: none`;
+
+            
+            document.querySelector('.nav').append(panelEndWrapper);
+            panelEndWrapper.append(document.querySelector('.nav__list-right'))
+            panelEndWrapper.append(document.querySelector('.nav__list__lastChild'))
         } else {
             document.querySelector('nav').style = `top: 0`;
             document.querySelector('.head').style = 'top: 240px';
@@ -1041,7 +1048,7 @@
                 document.querySelector('.panel__item-box-ourClients').style = 'display:none';
                 if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-fond').style = 'display:block';
-                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);'
+                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);';
                 } else {
                     document.querySelector('.panel__item-box-fond').style = 'display:none'
                     document.querySelector('.nav__arrow-fond').style = 'transform: rotate(-45deg);'
