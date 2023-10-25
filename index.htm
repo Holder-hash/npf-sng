@@ -1029,6 +1029,10 @@
             document.querySelector('#header__cookie').style = 'display: block';
             document.querySelector('.footer__calc').style = `display: block`;
 
+            document.querySelector('.nav').append(document.querySelector('.nav__list-right'))
+            document.querySelector('.nav').append(document.querySelector('.nav__list__lastChild'))
+            document.querySelector('.nav').removeChild(panelEndWrapper)
+
             document.querySelector('body').classList.remove('body-overflow-hidden')
         }
     })

@@ -12903,14 +12903,13 @@ header {
   }
 
   .nav__lastChild-btn {
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 18px !important;
-}
-}
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px !important;
+  }
 
 .panelEndWrapper {
   width: 100%;
@@ -12931,6 +12930,9 @@ header {
 .nav__last__child a:last-child {
   font-size: 18px !important;
 }
+}
+
+
 
 .nav,
 .nav__list {
