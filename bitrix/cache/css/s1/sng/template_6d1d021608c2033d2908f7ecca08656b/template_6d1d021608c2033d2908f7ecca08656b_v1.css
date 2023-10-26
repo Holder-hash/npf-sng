@@ -14642,6 +14642,11 @@ header {
   padding: 1px 50px 32px;
   font-size: .8rem
 }
+@media screen and (max-width: 1024px) {
+  .sng__box {
+    padding: 1px 24px 0px;
+  }
+}
 
 .sng__box a:hover {
   text-decoration: underline
