@@ -13544,6 +13544,7 @@ header {
 @media screen and (max-width: 480px) {
   .footer__list {
     flex-wrap: wrap;
+    gap: 5px;
   }
 }
 
@@ -21181,6 +21182,7 @@ header {
   }
   .cookie__body>h5 {
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .cookie__list {
