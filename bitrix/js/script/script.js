@@ -7,7 +7,9 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').style = `top: 78px`
         document.querySelector('.head').style = 'top: 0';
         document.querySelector('#header__cookie'). style = 'display: none';
-        document.querySelector('.footer__calc').style = `display: none`;
+        if (document.querySelector('.footer__calc')) {
+            document.querySelector('.footer__calc').style = `display: none`;
+        }
 
         document.querySelector('.nav').append(panelEndWrapper);
         panelEndWrapper.append(document.querySelector('.nav__list-right'))
