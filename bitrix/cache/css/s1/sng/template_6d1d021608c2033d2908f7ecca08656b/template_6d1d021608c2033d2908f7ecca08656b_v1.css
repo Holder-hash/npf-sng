@@ -13475,12 +13475,16 @@ header {
 }
 
 @media screen and (max-width: 750px) {
+  .footer__right-section-left {
+    margin-top: 20px;
+  }
   .footer__middle-section>a>img{
       width: 65px;
       height: 65px;
   }
   .footer__right-section-left>a>img {
     width: 213px;
+    margin-top: 20px;
   }
 }
 
