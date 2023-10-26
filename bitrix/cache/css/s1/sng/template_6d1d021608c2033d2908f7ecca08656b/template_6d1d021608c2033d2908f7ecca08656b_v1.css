@@ -12796,7 +12796,6 @@ header {
   }
   .desktop_logo {
     display: block;
-    margin-right: 10px;
   }
   .desktop_logo>img {
     width: 190px;
