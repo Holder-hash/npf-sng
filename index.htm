@@ -136,9 +136,9 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="nav__list">
-                                <li class="nav__item d-flex flex-column align-items-center justify-content-center">
-                                    <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative" target="_blank">
+                            <ul class="nav__list nav__list__lastChild">
+                                <li class="nav__last__child nav__item d-flex flex-column align-items-center justify-content-center">
+                                    <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative nav__lastChild-btn" target="_blank">
                                         Личный кабинет
                                     </a>
                                     <a href="contacts/index.htm" class="nav__link" data-menu-id="contacts">Обратиться в Фонд</a>
@@ -1008,8 +1008,33 @@
 
 <!-- burger menu -->
 <script>
+    const panelEndWrapper = document.createElement('div');
+    panelEndWrapper.classList.toggle('panelEndWrapper')
     document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').classList.toggle('burger-open');
+        if (document.querySelector('nav').classList.contains('burger-open')) {
+            document.querySelector('nav').style = `top: 78px`
+            document.querySelector('.head').style = 'top: 0';
+            document.querySelector('#header__cookie'). style = 'display: none';
+            document.querySelector('.footer__calc').style = `display: none`;
+
+            document.querySelector('.nav').append(panelEndWrapper);
+            panelEndWrapper.append(document.querySelector('.nav__list-right'))
+            panelEndWrapper.append(document.querySelector('.nav__list__lastChild'))
+
+            document.querySelector('body').classList.toggle('body-overflow-hidden')
+        } else {
+            document.querySelector('nav').style = `top: 0`;
+            document.querySelector('.head').style = 'top: 240px';
+            document.querySelector('#header__cookie').style = 'display: block';
+            document.querySelector('.footer__calc').style = `display: block`;
+
+            document.querySelector('.nav').append(document.querySelector('.nav__list-right'))
+            document.querySelector('.nav').append(document.querySelector('.nav__list__lastChild'))
+            document.querySelector('.nav').removeChild(panelEndWrapper)
+
+            document.querySelector('body').classList.remove('body-overflow-hidden')
+        }
     })
 </script>
 <!-- panel -->
@@ -1019,7 +1044,7 @@
     const navListLink = document.querySelectorAll('.nav__list-link');
     navListLink.forEach(navLinkElement => {
         navLinkElement.addEventListener('click', (e) => {
-            e.preventDefault()
+            e.preventDefault();
             document.querySelector('.nav__fond-li').onclick = () => {
                 document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
                 document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
@@ -1030,7 +1055,7 @@
                 document.querySelector('.panel__item-box-ourClients').style = 'display:none';
                 if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
                     document.querySelector('.panel__item-box-fond').style = 'display:block';
-                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);'
+                    document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);';
                 } else {
                     document.querySelector('.panel__item-box-fond').style = 'display:none'
                     document.querySelector('.nav__arrow-fond').style = 'transform: rotate(-45deg);'
