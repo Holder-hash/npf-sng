@@ -14681,6 +14681,7 @@ header {
   .sng__right {
     display: flex;
     flex-direction: column;
+    margin-top: 3px;
   }
 }
 
