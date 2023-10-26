@@ -14650,8 +14650,13 @@ header {
 .sng__container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
+/* @media screen and (max-width: 1024px) {
+  .sng__container {
+    flex-direction: column-reverse;
+  }
+} */
 
 .sng__content {
   min-width: 1028px;
@@ -14662,6 +14667,11 @@ header {
   min-width: 333px;
   height: 100%
 }
+/* @media screen and (max-width: 1024px) {
+  .sng__right {
+    display: flex;
+  }
+} */
 
 .sng__cards {
   -ms-flex-wrap: wrap;
