@@ -13475,6 +13475,16 @@ header {
   justify-content: space-between
 }
 
+@media screen and (max-width: 750px) {
+  .footer__middle-section>a>img{
+      width: 65px;
+      height: 65px;
+  }
+  .footer__right-section-left>a>img {
+    width: 213px;
+  }
+}
+
 .footer__left,
 .footer__middle-section {
   display: -webkit-box;
