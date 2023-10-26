@@ -1,3 +1,4 @@
+//burger menu
 const panelEndWrapper = document.createElement('div');
 panelEndWrapper.classList.toggle('panelEndWrapper')
 document.querySelector('.burger-menu').addEventListener('click', () => {
