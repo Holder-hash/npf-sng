@@ -14675,6 +14675,7 @@ header {
 @media screen and (max-width: 1024px) {
   .sng__right {
     display: flex;
+    flex-direction: column;
   }
 }
 

@@ -7,6 +7,11 @@
     background-color: #FFFFFF;
     display: block;
 }
+@media screen and (max-width: 1024px) {
+    .banner-1{
+        margin-bottom: 10px;
+    }
+  }
 
 .banner-1__box {
     display: flex;
@@ -28,6 +33,11 @@
     font-family: 'Roboto', sans-serif;
     width: 190px;
 }
+@media screen and (max-width: 1024px) {
+    .banner-1__text {
+        width: 100%;
+    }
+  }
 
 .banner-1:hover .banner-1__icon {
     animation: pulse 1s ease-in-out;
