@@ -13474,7 +13474,7 @@ header {
   justify-content: space-between
 }
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .footer__right-section-left {
     margin-top: 20px;
   }
@@ -13486,7 +13486,7 @@ header {
     width: 213px;
     margin-top: 20px;
   }
-}
+} */
 
 .footer__left,
 .footer__middle-section {
