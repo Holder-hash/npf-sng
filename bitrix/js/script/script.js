@@ -57,7 +57,7 @@ const navListLink = document.querySelectorAll('.nav__list-link');
 navListLink.forEach(navLinkElement => {
     navLinkElement.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector('.nav__fond-li').onclick = () => {
+        document.querySelector('.nav__fond-li').addEventListener('touchstart', () => {
             // document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
             if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
                 document.querySelector('.nav__fond-li').classList.remove('nav-fond-open')
@@ -77,7 +77,7 @@ navListLink.forEach(navLinkElement => {
                 document.querySelector('.panel__item-box-fond').style = 'display:none';
                 document.querySelector('.nav__arrow-fond').style = 'transform: rotate(-45deg);';
             }
-        }
+        })
         document.querySelector('.nav__program-li').onclick = () => {
             document.querySelector('.nav__program-li').classList.toggle('nav-fond-open');
             document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
