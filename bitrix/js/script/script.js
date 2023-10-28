@@ -1,10 +1,21 @@
 //burger menu
 const panelEndWrapper = document.createElement('div');
-panelEndWrapper.classList.toggle('panelEndWrapper')
+// panelEndWrapper.classList.toggle('panelEndWrapper');
+if (panelEndWrapper.classList.contains('panelEndWrapper')) {
+    panelEndWrapper.classList.remove('panelEndWrapper')
+} else {
+    panelEndWrapper.classList.add('panelEndWrapper')
+}
 document.querySelector('.burger-menu').addEventListener('click', () => {
     document.getElementById('bg').style = 'display: none;';
     document.getElementById('panel').style = 'display: none;';
-    document.querySelector('nav').classList.toggle('burger-open');
+    // document.querySelector('nav').classList.toggle('burger-open');
+    if (document.querySelector('nav').classList.contains('burger-open')) {
+        document.querySelector('nav').classList.remove('burger-open')
+    } else {
+        document.querySelector('nav').classList.add('burger-open')
+    }
+
     if (document.querySelector('nav').classList.contains('burger-open')) {
         document.querySelector('nav').style = `top: 78px;`;
         document.querySelector('.head').style = 'top: 0';
@@ -17,7 +28,12 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
         panelEndWrapper.append(document.querySelector('.nav__list-right'));
         panelEndWrapper.append(document.querySelector('.nav__list__lastChild'));
 
-        document.querySelector('body').classList.toggle('body-overflow-hidden');
+        // document.querySelector('body').classList.toggle('body-overflow-hidden');
+        if (document.querySelector('body').classList.contains('body-overflow-hidden')) {
+            document.querySelector('body').classList.remove('body-overflow-hidden')
+        } else {
+            document.querySelector('body').classList.add('body-overflow-hidden')
+        }
     } else {
         document.querySelector('nav').style = `top: 0`;
         document.querySelector('.head').style = 'top: 240px';
@@ -42,7 +58,12 @@ navListLink.forEach(navLinkElement => {
     navLinkElement.addEventListener('click', (e) => {
         e.preventDefault();
         document.querySelector('.nav__fond-li').onclick = () => {
-            document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
+            // document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
+            if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
+                document.querySelector('.nav__fond-li').classList.remove('nav-fond-open')
+            } else {
+                document.querySelector('.nav__fond-li').classList.add('nav-fond-open')
+            }
             document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
             document.querySelector('.panel__item-box-program').style = 'display:none';
             document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
