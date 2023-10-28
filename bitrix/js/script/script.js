@@ -52,31 +52,33 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 
 // burger menu items
 const panel = document.querySelector('.panel__body-fond');
-const navItemFond = document.querySelector('.nav__item-fond')
+const navItemFond = document.querySelector('.nav__item-fond');
 const navListLink = document.querySelectorAll('.nav__list-link');
-const menuElements = document.querySelectorAll('.menu__item');
+const menuElements = document.querySelectorAll('.nav__list-link');
 
 menuElements.forEach(element => {
     element.addEventListener('click', (e) => {
-        let target = e.target;
         e.preventDefault();
+        let target = e.target;
+        console.log(element);
+
         openList(target);
     })
 });
 
 function openList(target) {
-    const targetLinksBox = target.parentNode.lastElementChild
-    
-    if (targetLinksBox.classList.contains('links_box-show')) {
+    const targetLinksBox = target.parentNode.lastElementChild;
+
+    if (targetLinksBox.classList.contains('links_box-show') && target.className != 'panel__link') {
         targetLinksBox.classList.remove('links_box-show');
-        target.parentNode.children[1].style = 'transform: rotate(-45deg);'
+        // target.parentNode.children[1].style = 'transform: rotate(-45deg);';
     } else {
         targetLinksBox.classList.add('links_box-show');
-        target.parentNode.children[1].style = 'transform: rotate(45deg);'
+        // target.parentNode.children[1].style = 'transform: rotate(45deg);';
     }
 
     document.querySelectorAll('.links_box').forEach(box => {
-        if (box != targetLinksBox) {
+        if (box != targetLinksBox && target.className != 'panel__link') {
             box.classList.remove('links_box-show');
         }
     })
