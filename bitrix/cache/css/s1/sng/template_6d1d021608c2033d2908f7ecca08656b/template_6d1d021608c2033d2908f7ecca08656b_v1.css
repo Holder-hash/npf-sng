@@ -21221,9 +21221,6 @@ header {
   .container, .wrapper {
     min-width: 100% !important;
   }
-  /* .main__sticky {
-    margin-top: 196px !important;
-  } */
   .calc-banner__body span{
     display: none;
   }

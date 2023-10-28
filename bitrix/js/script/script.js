@@ -20,7 +20,9 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
         document.querySelector('nav').style = `top: 0`;
         document.querySelector('.head').style = 'top: 240px';
         document.querySelector('#header__cookie').style = 'display: block';
-        document.querySelector('.footer__calc').style = `display: block`;
+        if (document.querySelector('.footer__calc')) {
+            document.querySelector('.footer__calc').style = `display: block`;
+        }
 
         document.querySelector('.nav').append(document.querySelector('.nav__list-right'))
         document.querySelector('.nav').append(document.querySelector('.nav__list__lastChild'))
