@@ -12910,25 +12910,25 @@ header {
     font-size: 18px !important;
   }
 
-.panelEndWrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  .panelEndWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-.nav__list__lastChild {
-  width: 100%;
-}
+  .nav__list__lastChild {
+    width: 100%;
+  }
 
-.nav__last__child {
-  width: 100%;
-}
-.nav__last__child a:last-child {
-  font-size: 18px !important;
-}
+  .nav__last__child {
+    width: 100%;
+  }
+  .nav__last__child a:last-child {
+    font-size: 18px !important;
+  }
 }
 
 
