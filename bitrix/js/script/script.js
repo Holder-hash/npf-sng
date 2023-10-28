@@ -54,9 +54,8 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 const panel = document.querySelector('.panel__body-fond');
 const navItemFond = document.querySelector('.nav__item-fond');
 const navListLink = document.querySelectorAll('.nav__list-link');
-const menuElements = document.querySelectorAll('.nav__list-link');
 
-menuElements.forEach(element => {
+navListLink.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
         let target = e.target;
@@ -71,10 +70,10 @@ function openList(target) {
 
     if (targetLinksBox.classList.contains('links_box-show') && target.className != 'panel__link') {
         targetLinksBox.classList.remove('links_box-show');
-        // target.parentNode.children[1].style = 'transform: rotate(-45deg);';
+        target.parentNode.children[1].style = 'transform: rotate(-45deg);';
     } else {
         targetLinksBox.classList.add('links_box-show');
-        // target.parentNode.children[1].style = 'transform: rotate(45deg);';
+        target.parentNode.children[1].style = 'transform: rotate(45deg);';
     }
 
     document.querySelectorAll('.links_box').forEach(box => {
