@@ -6,7 +6,7 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
     document.getElementById('panel').style = 'display: none;';
     document.querySelector('nav').classList.toggle('burger-open');
     if (document.querySelector('nav').classList.contains('burger-open')) {
-        document.querySelector('nav').style = `top: 78px`
+        document.querySelector('nav').style = `top: 78px;`;
         document.querySelector('.head').style = 'top: 0';
         document.querySelector('#header__cookie'). style = 'display: none';
         if (document.querySelector('.footer__calc')) {
