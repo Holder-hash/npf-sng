@@ -58,92 +58,26 @@ const menuElements = document.querySelectorAll('.menu__item');
 
 menuElements.forEach(element => {
     element.addEventListener('click', (e) => {
-        let target = e.target
+        let target = e.target;
         e.preventDefault();
-        openList(target)
+        openList(target);
     })
 });
 
 function openList(target) {
-    const linksBox = target.parentNode.lastElementChild
+    const targetLinksBox = target.parentNode.lastElementChild
+    
+    if (targetLinksBox.classList.contains('links_box-show')) {
+        targetLinksBox.classList.remove('links_box-show');
+        target.parentNode.children[1].style = 'transform: rotate(-45deg);'
+    } else {
+        targetLinksBox.classList.add('links_box-show');
+        target.parentNode.children[1].style = 'transform: rotate(45deg);'
+    }
+
     document.querySelectorAll('.links_box').forEach(box => {
-        box.style = 'display: none'
+        if (box != targetLinksBox) {
+            box.classList.remove('links_box-show');
+        }
     })
-        linksBox.style = 'display: block'
 }
-
-// navListLink.forEach(navLinkElement => {
-//     navLinkElement.addEventListener('click', (e) => {
-//         e.preventDefault();
-
-        // document.querySelector('.nav__fond-li').addEventListener('click', () => {
-        //     // document.querySelector('.nav__fond-li').classList.toggle('nav-fond-open');
-        //     if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
-        //         document.querySelector('.nav__fond-li').classList.remove('nav-fond-open')
-        //     } else {
-        //         document.querySelector('.nav__fond-li').classList.add('nav-fond-open')
-        //     }
-        //     document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-program').style = 'display:none';
-        //     document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-results').style = 'display:none';
-        //     document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-ourClients').style = 'display:none';
-        //     if (document.querySelector('.nav__fond-li').classList.contains('nav-fond-open')) {
-        //         document.querySelector('.panel__item-box-fond').style = 'display:block';
-        //         document.querySelector('.nav__arrow-fond').style = 'transform: rotate(45deg);';
-        //     } else {
-        //         document.querySelector('.panel__item-box-fond').style = 'display:none';
-        //         document.querySelector('.nav__arrow-fond').style = 'transform: rotate(-45deg);';
-        //     }
-        // })
-        // document.querySelector('.nav__program-li').onclick = () => {
-        //     document.querySelector('.nav__program-li').classList.toggle('nav-fond-open');
-        //     document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-fond').style = 'display:none';
-        //     document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-results').style = 'display:none';
-        //     document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-ourClients').style = 'display:none';
-        //     if (document.querySelector('.nav__program-li').classList.contains('nav-fond-open')) {
-        //         document.querySelector('.panel__item-box-program').style = 'display:block';
-        //         document.querySelector('.nav__arrow-program').style = 'transform: rotate(45deg);';
-        //     } else {
-        //         document.querySelector('.panel__item-box-program').style = 'display:none';
-        //         document.querySelector('.nav__arrow-program').style = 'transform: rotate(-45deg);'
-        //     }
-        // }
-        // document.querySelector('.nav__results-li').onclick = () => {
-        //     document.querySelector('.nav__results-li').classList.toggle('nav-fond-open');
-        //     document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-fond').style = 'display:none';
-        //     document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-program').style = 'display:none';
-        //     document.querySelector('.nav__our-clients-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-ourClients').style = 'display:none';
-        //     if (document.querySelector('.nav__results-li').classList.contains('nav-fond-open')) {
-        //         document.querySelector('.panel__item-box-results').style = 'display:block';
-        //         document.querySelector('.nav__arrow-results').style = 'transform: rotate(45deg);';
-        //     } else {
-        //         document.querySelector('.panel__item-box-results').style = 'display:none'
-        //         document.querySelector('.nav__arrow-results').style = 'transform: rotate(-45deg);';
-        //     }
-        // }
-        // document.querySelector('.nav__our-clients-li').onclick = () => {
-        //     document.querySelector('.nav__our-clients-li').classList.toggle('nav-fond-open');
-        //     document.querySelector('.nav__fond-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-fond').style = 'display:none';
-        //     document.querySelector('.nav__program-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-program').style = 'display:none';
-        //     document.querySelector('.nav__results-li').classList.remove('nav-fond-open');
-        //     document.querySelector('.panel__item-box-results').style = 'display:none';
-        //     if (document.querySelector('.nav__our-clients-li').classList.contains('nav-fond-open')) {
-        //         document.querySelector('.panel__item-box-ourClients').style = 'display:block';
-        //         document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(45deg);'
-        //     } else {
-        //         document.querySelector('.panel__item-box-ourClients').style = 'display:none';
-        //         document.querySelector('.nav__arrow-ourClients').style = 'transform: rotate(-45deg);';
-        //     }
-        // }
-//     })
-// })
