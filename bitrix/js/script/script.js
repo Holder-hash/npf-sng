@@ -51,8 +51,6 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 })
 
 // burger menu items
-const panel = document.querySelector('.panel__body-fond');
-const navItemFond = document.querySelector('.nav__item-fond');
 const navListLink = document.querySelectorAll('.nav__list-link');
 
 navListLink.forEach(element => {
