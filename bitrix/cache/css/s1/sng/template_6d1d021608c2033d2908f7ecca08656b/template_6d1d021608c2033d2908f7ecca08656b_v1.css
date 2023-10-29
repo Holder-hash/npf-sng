@@ -12879,6 +12879,10 @@ header {
   .nav__link {
     font-size: 1.3rem !important;
   }
+
+  .nav__list-middle {
+    overflow: scroll;
+  }
   .nav__list-middle>.nav__item {
     font-weight: bold;
     margin-bottom: 10px;
