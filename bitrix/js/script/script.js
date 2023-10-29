@@ -59,8 +59,6 @@ navListLink.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
         let target = e.target;
-        console.log(element);
-
         openList(target);
     })
 });
