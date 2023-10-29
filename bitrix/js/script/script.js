@@ -75,6 +75,9 @@ function openList(target) {
     document.querySelectorAll('.links_box').forEach(box => {
         if (box != targetLinksBox && target.className != 'panel__link') {
             box.classList.remove('links_box-show');
+            box.parentNode.children[1].style = 'transform: rotate(-45deg);';
         }
     })
+
+
 }
