@@ -13479,7 +13479,7 @@ header {
   justify-content: space-between
 }
 
-/* @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .footer__right-section-left {
     margin-top: 20px;
   }
@@ -13488,10 +13488,9 @@ header {
       height: 65px;
   }
   .footer__right-section-left>a>img {
-    width: 213px;
-    margin-top: 20px;
+    max-width: 213px;
   }
-} */
+}
 
 .footer__left,
 .footer__middle-section {
@@ -13511,6 +13510,11 @@ header {
 .footer__low {
   color: #fff;
   margin-bottom: 20px
+}
+@media screen and (max-width: 1024px) {
+  .footer__low {
+    margin-bottom: 0;
+  }
 }
 
 .footer__license {
