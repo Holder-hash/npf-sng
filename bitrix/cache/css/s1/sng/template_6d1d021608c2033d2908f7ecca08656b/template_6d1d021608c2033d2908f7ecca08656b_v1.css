@@ -13489,6 +13489,7 @@ header {
   }
   .footer__right-section-left>a>img {
     max-width: 213px;
+    margin-top: 20px;
   }
 }
 
