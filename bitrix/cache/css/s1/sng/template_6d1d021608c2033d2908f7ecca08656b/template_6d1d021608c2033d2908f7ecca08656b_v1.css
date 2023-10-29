@@ -12832,6 +12832,7 @@ header {
     flex-direction: column;
     /* margin-left: 15px !important; */
     align-items: flex-start !important;
+    overflow-y: scroll;
   }
 
   .adaptive__logo>img {
@@ -12851,7 +12852,7 @@ header {
   }
 
   .body-overflow-hidden {
-    overflow: hidden
+    overflow: hidden;
   }
 
   /*burger panel*/
@@ -12880,9 +12881,6 @@ header {
     font-size: 1.3rem !important;
   }
 
-  .nav__list-middle {
-    overflow: scroll;
-  }
   .nav__list-middle>.nav__item {
     font-weight: bold;
     margin-bottom: 10px;
