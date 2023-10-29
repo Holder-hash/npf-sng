@@ -54,7 +54,7 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 const navListLink = document.querySelectorAll('.nav__list-link');
 
 navListLink.forEach(element => {
-    element.addEventListener('click', (e) => {
+    element.addEventListener('touchstart', (e) => {
         e.preventDefault();
         let target = e.target;
         openList(target);
