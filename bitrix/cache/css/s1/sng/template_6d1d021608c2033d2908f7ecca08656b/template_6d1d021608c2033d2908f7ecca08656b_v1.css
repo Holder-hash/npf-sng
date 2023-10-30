@@ -16219,13 +16219,13 @@ header {
 }
 @media screen and (max-width: 380px) {
   .hero__title {
-    max-width: 300px;
+    max-width: 260px;
     font-size: 20px;
     margin-bottom: 0px !important;
     line-height: 25px;
   }
   .hero__description {
-    max-width: 290px;
+    max-width: 260px;
     font-size: 14px;
     margin-top: 0px !important;
   }
