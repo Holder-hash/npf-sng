@@ -15071,9 +15071,10 @@ header {
   }
   .contacts__btn-box>a {
     margin-left: 0 !important;
+    min-width: 100%;
   }
   .contacts__btn {
-    min-width: 226px;
+    min-width: 100%;
   }
 }
 
