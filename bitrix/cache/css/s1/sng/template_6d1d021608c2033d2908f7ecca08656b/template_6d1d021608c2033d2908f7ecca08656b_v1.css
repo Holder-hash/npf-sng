@@ -15069,6 +15069,12 @@ header {
     flex-wrap: wrap;
     max-width: 100%;
   }
+  .contacts__btn-box>a {
+    margin-left: 0 !important;
+  }
+  .contacts__btn {
+    min-width: 226px;
+  }
 }
 
 .breadcrumbs {
