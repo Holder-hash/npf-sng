@@ -15983,6 +15983,7 @@ header {
   }
   .contacts__row-boss {
     flex-wrap: wrap;
+    gap: 50px;
   }
 
   .contacts__row-mobile__down {
