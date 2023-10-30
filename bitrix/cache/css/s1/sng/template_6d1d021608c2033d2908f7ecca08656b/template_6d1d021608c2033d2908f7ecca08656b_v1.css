@@ -15956,6 +15956,15 @@ header {
   background-color: #c4c7cc
 }
 
+@media screen and (max-width: 600px) {
+  .ymaps-map {
+    max-height: 300px !important;
+  }
+  .bx-yandex-map {
+    max-height: 300px !important;
+  }
+}
+
 .contacts__row {
   display: -webkit-box;
   display: -ms-flexbox;
