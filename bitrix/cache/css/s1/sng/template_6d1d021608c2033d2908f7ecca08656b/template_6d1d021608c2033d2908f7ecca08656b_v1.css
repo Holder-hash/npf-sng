@@ -15972,6 +15972,10 @@ header {
   justify-content: flex-start
 }
 @media screen and (max-width: 1024px) {
+  .contacts h2 {
+    text-align: center;
+  }
+
   .contacts__row-left {
     width: 100%;
     flex-wrap: wrap;
