@@ -16221,10 +16221,13 @@ header {
   .hero__title {
     max-width: 300px;
     font-size: 20px;
+    margin-bottom: 0px !important;
+    line-height: 25px;
   }
   .hero__description {
-    max-width: 300px;
+    max-width: 290px;
     font-size: 14px;
+    margin-top: 0px !important;
   }
   .hero__img-adaptation {
     display: none !important;
@@ -16233,7 +16236,9 @@ header {
     max-width: 250px;
     height: 100px !important;
   }
-
+  .hero__img-numbers {
+    height: 25px !important;
+  }
   .contract__img {
     max-width: 290px;
   }
