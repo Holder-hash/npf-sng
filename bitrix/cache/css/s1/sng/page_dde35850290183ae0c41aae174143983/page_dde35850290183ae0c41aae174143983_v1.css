@@ -151,6 +151,11 @@ div.bx-popup-form div.bx-yandex-map div.YMaps-b-balloon-point div.YMaps-b-balloo
     background-color: #FFFFFF;
     display: block;
 }
+@media screen and (max-width: 1024px) {
+    .banner-1{
+        margin-bottom: 10px;
+    }
+  }
 
 .banner-1__box {
     display: flex;
@@ -180,6 +185,12 @@ div.bx-popup-form div.bx-yandex-map div.YMaps-b-balloon-point div.YMaps-b-balloo
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 1024px) {
+    .banner-1__text {
+        width: 100%;
+    }
+  }
 
 @keyframes pulse {
     0% {
