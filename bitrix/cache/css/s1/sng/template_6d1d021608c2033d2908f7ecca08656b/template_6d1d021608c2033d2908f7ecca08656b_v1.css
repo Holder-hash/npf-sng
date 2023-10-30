@@ -15064,6 +15064,13 @@ header {
   height: auto
 }
 
+@media screen and (max-width: 1024px) {
+  .contacts__btn-box {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+
 .breadcrumbs {
   margin-top: 1em
 }
@@ -16024,6 +16031,25 @@ header {
   }
   .more__contacts-box>.contacts__col {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contacts__info {
+    min-width: 0 !important;
+    position: relative;
+    left: 0;
+    text-align: center;
+    max-width: 350px;
+  }
+  .contacts__info p {
+    max-width: 320px;
+    overflow-y: inherit;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .contacts__row-boss {
+    gap: 10px;
   }
 }
 
