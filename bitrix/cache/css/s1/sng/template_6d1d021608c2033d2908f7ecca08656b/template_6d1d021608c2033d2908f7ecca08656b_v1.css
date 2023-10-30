@@ -16217,6 +16217,27 @@ header {
     display: none !important;
   }
 }
+@media screen and (max-width: 380px) {
+  .hero__title {
+    max-width: 300px;
+    font-size: 20px;
+  }
+  .hero__description {
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .hero__img-adaptation {
+    display: none !important;
+  }
+  .hero__adaptation-elem {
+    max-width: 250px;
+    height: 100px !important;
+  }
+
+  .contract__img {
+    max-width: 290px;
+  }
+}
 
 .hint {
   position: relative;
