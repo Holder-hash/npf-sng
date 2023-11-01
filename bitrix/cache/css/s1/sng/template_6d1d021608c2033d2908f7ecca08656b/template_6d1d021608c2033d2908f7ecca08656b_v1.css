@@ -13725,6 +13725,9 @@ header {
   .sng__box {
     padding: 1px 24px 0px;
   }
+  .sng__box h3 {
+    text-align: center;
+  }
 }
 .sng__box a:hover {
   text-decoration: underline;
@@ -13766,6 +13769,11 @@ header {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1024px) {
+  .sng__cards {
+    justify-content: center;
+  }
+}
 .sng__card,
 .sng__cards {
   display: flex;

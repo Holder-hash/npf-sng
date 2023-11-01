@@ -14504,6 +14504,9 @@ header {
 @media screen and (max-width: 1024px) {
   .sng__box {
     padding: 1px 24px 0px;
+    & h3 {
+      text-align: center;
+    }
   }
 }
 
@@ -14548,6 +14551,11 @@ header {
 .sng__cards {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
+}
+@media screen and (max-width: 1024px) {
+  .sng__cards {
+    justify-content: center;
+  }
 }
 
 .sng__card,
