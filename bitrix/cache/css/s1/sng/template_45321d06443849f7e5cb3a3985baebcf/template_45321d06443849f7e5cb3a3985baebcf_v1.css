@@ -1,6 +1,36 @@
 @charset "UTF-8";
 /* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
 /*warning! "../../../../scss/_header-burger" be imported here.*/
+/*footer adaptation*/
+@media screen and (max-width: 1024px) {
+  .d-flex {
+    margin-top: 10px;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__low {
+    margin-bottom: 0;
+  }
+  .footer__license {
+    margin-top: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer__middle-section > a > img {
+    width: 65px;
+    height: 65px;
+  }
+  .footer__right-section-left > a > img {
+    max-width: 213px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__list {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
 /* Chevin */
 @font-face {
   font-family: "Chevin";
@@ -12013,7 +12043,7 @@ img {
 }
 
 .main__sticky {
-  margin-top: 326px;
+  margin-top: 372px;
 }
 
 footer,
