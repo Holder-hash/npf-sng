@@ -6131,7 +6131,7 @@ input[type=submit].btn-block {
   color: #fff
 }
 
-@import "../../../../scss/_header-burger";
+
 
 .card {
   position: relative;
@@ -12759,9 +12759,6 @@ header {
   display: flex;
 }
 
-
-
-
 .nav,
 .nav__list {
   display: -webkit-box;
@@ -12891,6 +12888,8 @@ header {
 .nav__link {
   font-size: 1rem
 }
+
+@import "../../../../scss/_header-burger";
 
 .arrow {
   content: "";
