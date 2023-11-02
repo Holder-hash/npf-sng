@@ -12236,7 +12236,7 @@ header {
 
 .head__sticky {
   position: fixed;
-  top: 240px;
+  top: 200px;
   left: 0;
   right: 0;
 }
