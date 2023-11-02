@@ -12046,6 +12046,11 @@ img {
   margin-top: 372px;
 }
 
+@media screen and (max-width: 1024px) {
+  .main__sticky {
+    margin-top: 333px !important;
+  }
+}
 footer,
 header {
   flex: 0 0 auto;
