@@ -13738,7 +13738,7 @@ header {
     width: 100% !important;
   }
   .sng__header > .sng__title {
-    text-align: justify;
+    text-align: unset;
   }
 }
 .sng__box a:hover {
