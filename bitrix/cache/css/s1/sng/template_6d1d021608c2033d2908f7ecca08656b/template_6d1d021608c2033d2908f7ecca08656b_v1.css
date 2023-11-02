@@ -13729,7 +13729,11 @@ header {
     text-align: center;
   }
   .sng__box p img {
+    max-width: 500px;
     width: 100% !important;
+  }
+  .sng__header > .sng__title {
+    text-align: justify;
   }
 }
 .sng__box a:hover {

@@ -14508,8 +14508,12 @@ header {
       text-align: center;
     }
     & p img {
+      max-width: 500px;
       width: 100% !important;
     }
+  }
+  .sng__header>.sng__title {
+    text-align: justify;
   }
 }
 
