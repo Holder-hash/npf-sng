@@ -13723,7 +13723,10 @@ header {
 
 @media screen and (max-width: 1024px) {
   .sng__box {
-    padding: 1px 24px 0px;
+    padding: 1px 24px 48px;
+  }
+  .sng__box h3 {
+    text-align: center;
   }
 }
 .sng__box a:hover {
@@ -13766,6 +13769,11 @@ header {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1024px) {
+  .sng__cards {
+    justify-content: center;
+  }
+}
 .sng__card,
 .sng__cards {
   display: flex;
