@@ -13971,6 +13971,14 @@ header {
   outline: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .sng__box > div > .sng__link-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 8 * (100vw - 320px) / 880);
+  }
+}
 .sng__link-medium--background {
   background-color: #32a5a5;
   color: #fff;
