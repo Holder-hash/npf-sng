@@ -14522,6 +14522,9 @@ header {
       max-width: 100%;
       overflow-y: scroll;
     }
+    & br {
+      display: none;
+    }
   }
   .sng__box>div {
     flex-wrap: wrap;
@@ -15835,9 +15838,6 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  // .bx-yandex-view-layout {
-  //   width: 300px !important;
-  // }
   .bx-yandex-map {
     height: 300px;
   }
@@ -15880,8 +15880,8 @@ header {
     gap: 50px;
   }
 
-  .contacts__row-mobile__down {
-    gap: 50px;
+  .contacts__row-mobile__down>.contacts__col:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 
@@ -15916,7 +15916,7 @@ header {
     justify-content: center;
     // gap: 50px;
   }
-  .more__contacts-box>.contacts__col {
+  .more__contacts-box>.contacts__col:not(:last-child) {
     justify-content: center;
     margin-bottom: 50px;
   }

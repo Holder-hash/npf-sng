@@ -13743,6 +13743,9 @@ header {
     max-width: 100%;
     overflow-y: scroll;
   }
+  .sng__box br {
+    display: none;
+  }
   .sng__box > div {
     flex-wrap: wrap;
     flex-direction: column;
@@ -14963,8 +14966,8 @@ header {
     flex-wrap: wrap;
     gap: 50px;
   }
-  .contacts__row-mobile__down {
-    gap: 50px;
+  .contacts__row-mobile__down > .contacts__col:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 .contacts__row-around {
@@ -14995,7 +14998,7 @@ header {
   .more__contacts-box {
     justify-content: center;
   }
-  .more__contacts-box > .contacts__col {
+  .more__contacts-box > .contacts__col:not(:last-child) {
     justify-content: center;
     margin-bottom: 50px;
   }
