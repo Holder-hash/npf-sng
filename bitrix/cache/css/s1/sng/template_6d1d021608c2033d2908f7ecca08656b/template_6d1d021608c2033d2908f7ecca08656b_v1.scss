@@ -15836,6 +15836,11 @@ header {
   background-color: #c4c7cc
 }
 
+@media screen and (max-width: 1024px) {
+  .bx-yandex-view-layout {
+    max-width: 100% !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .ymaps-map {
     max-height: 300px !important;
@@ -15843,6 +15848,7 @@ header {
   .bx-yandex-map {
     max-height: 300px !important;
   }
+
 }
 
 
