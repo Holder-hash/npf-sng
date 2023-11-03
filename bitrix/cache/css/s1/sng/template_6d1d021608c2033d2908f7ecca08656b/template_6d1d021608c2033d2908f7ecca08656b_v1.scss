@@ -14516,7 +14516,11 @@ header {
     }
     & p img {
       max-width: 500px;
-      width: 100% !important;
+      // width: 100% !important;
+    }
+    & .graf-img {
+      max-width: 100%;
+      overflow-y: scroll;
     }
   }
   .sng__box>div {
