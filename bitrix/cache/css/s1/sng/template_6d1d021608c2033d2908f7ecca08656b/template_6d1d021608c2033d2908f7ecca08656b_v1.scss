@@ -14516,6 +14516,10 @@ header {
       width: 100% !important;
     }
   }
+  .sng__box>div {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   .sng__header>.sng__title {
     text-align: unset;
   }
