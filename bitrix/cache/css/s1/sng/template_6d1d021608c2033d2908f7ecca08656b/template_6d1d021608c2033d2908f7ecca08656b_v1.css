@@ -13816,7 +13816,7 @@ header {
 
 @media screen and (max-width: 1024px) {
   .sng__card {
-    min-width: 270px;
+    min-width: 100%;
   }
 }
 .sng__card-w276 {
