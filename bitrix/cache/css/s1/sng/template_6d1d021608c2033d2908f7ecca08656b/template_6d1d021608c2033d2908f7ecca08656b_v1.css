@@ -13750,9 +13750,6 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .sng__header > .sng__title {
-    text-align: unset;
-  }
 }
 .sng__box a:hover {
   text-decoration: underline;
@@ -14004,6 +14001,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 8 * (100vw - 320px) / 880);
+    margin-bottom: 10px;
   }
 }
 .sng__link-medium--background {
