@@ -15835,11 +15835,11 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .ymaps-map {
-    max-height: 300px !important;
-  }
+  // .bx-yandex-view-layout {
+  //   width: 300px !important;
+  // }
   .bx-yandex-map {
-    max-height: 300px !important;
+    height: 300px;
   }
 }
 
