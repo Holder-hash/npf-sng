@@ -15835,10 +15835,14 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+  .ymaps-map {
+    max-height: 300px !important;
+  }
   .bx-yandex-map {
-    height: 300px;
+    max-height: 300px !important;
   }
 }
+
 
 .contacts__row {
   display: -webkit-box;
@@ -15899,6 +15903,7 @@ header {
     position: relative;
     left: 0;
     text-align: center;
+    padding: 0 24px;
   }
   .contacts__info p {
     max-height: 215px;
