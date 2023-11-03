@@ -15910,10 +15910,11 @@ header {
 
   .more__contacts-box {
     justify-content: center;
-    gap: 50px;
+    // gap: 50px;
   }
   .more__contacts-box>.contacts__col {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 360px) {
