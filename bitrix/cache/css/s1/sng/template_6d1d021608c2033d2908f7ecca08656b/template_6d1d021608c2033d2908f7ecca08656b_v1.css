@@ -13728,6 +13728,9 @@ header {
 
 @media screen and (max-width: 1024px) {
   .sng__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 1px 24px 13px;
   }
   .sng__box h3 {
