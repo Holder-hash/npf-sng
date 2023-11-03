@@ -13728,7 +13728,7 @@ header {
 
 @media screen and (max-width: 1024px) {
   .sng__box {
-    padding: 1px 24px 48px;
+    padding: 1px 24px 13px;
   }
   .sng__box h3 {
     text-align: center;
@@ -13807,6 +13807,11 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .sng__card {
+    min-width: 270px;
+  }
+}
 .sng__card-w276 {
   min-width: 276px !important;
   max-width: 276px !important;
