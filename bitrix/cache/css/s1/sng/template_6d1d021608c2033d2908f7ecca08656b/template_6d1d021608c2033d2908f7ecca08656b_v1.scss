@@ -14522,6 +14522,9 @@ header {
       max-width: 100%;
       overflow-y: scroll;
     }
+    & .npo-list ul{
+      padding-left: 20px !important;
+    }
   }
   .sng__box>div {
     flex-wrap: wrap;
