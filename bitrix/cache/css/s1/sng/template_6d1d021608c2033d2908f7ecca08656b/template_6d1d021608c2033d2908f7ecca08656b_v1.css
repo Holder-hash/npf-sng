@@ -9,11 +9,20 @@
   .footer__content {
     flex-direction: column;
   }
-  .footer__low {
-    margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .footer__middle-section > a > img {
+    width: 65px;
+    height: 65px;
   }
-  .footer__license {
-    margin-top: auto;
+  .footer__right-section-left > a > img {
+    max-width: 213px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__list {
+    flex-wrap: wrap;
+    gap: 5px;
   }
 }
 /* Chevin */
@@ -12676,15 +12685,6 @@ header {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 750px) {
-  .footer__middle-section > a > img {
-    width: 65px;
-    height: 65px;
-  }
-  .footer__right-section-left > a > img {
-    max-width: 213px;
-  }
-}
 .footer__left,
 .footer__middle-section {
   display: flex;
@@ -12732,21 +12732,6 @@ header {
   text-decoration: underline;
 }
 
-/*footer adaptation*/
-@media screen and (max-width: 1024px) {
-  .footer__content {
-    flex-direction: column;
-  }
-  .d-flex {
-    margin-top: 10px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer__list {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
 #cert-grey {
   margin-top: 0 !important;
 }
