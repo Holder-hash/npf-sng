@@ -1,8 +1,5 @@
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
-    .d-flex {
-      margin-top: 10px;
-    }
     .footer__content {
       flex-direction: column;
     }
@@ -29,6 +26,7 @@
   }
   .footer__right-section-left>a>img {
     max-width: 213px;
+    -webkit-max-width: 213px;
   }
 }
 @media screen and (max-width: 480px) {
