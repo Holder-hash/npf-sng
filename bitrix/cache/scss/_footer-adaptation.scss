@@ -1,11 +1,5 @@
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
-  .footer__right {
-    margin-top: 20px;
-  }
-  .footer__content {
-    flex-direction: column;
-  }
   footer {
     br {
       display: none;
@@ -13,6 +7,15 @@
     .footer__low {
       margin-bottom: 20px;
     }
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__left {
+    margin-bottom: 30px;
+  }
+  .footer__image--napf {
+    min-height: 100px;
   }
 }
 // @media screen and (max-width: 750px) {
