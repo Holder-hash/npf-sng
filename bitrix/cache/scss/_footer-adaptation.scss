@@ -4,18 +4,15 @@
     br {
       display: none;
     }
-    .footer__low {
-      padding-bottom: 20px;
-    }
   }
   .footer__content {
     flex-direction: column;
   }
   .footer__left {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .footer__image--napf {
-    min-height: 100px;
+   padding-top: 10px;
   }
 }
 // @media screen and (max-width: 750px) {
