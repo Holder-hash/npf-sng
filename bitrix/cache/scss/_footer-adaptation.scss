@@ -1,24 +1,12 @@
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
-    .footer__content {
-      flex-direction: column;
-    }
-    // .footer__low {
-    //     margin-bottom: 0;
-    // }
-    // .footer__license {
-    //     margin-top: auto;
-    // }
+  .footer__right {
+    margin-top: 20px;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
 }
-// @media screen and (max-width: 750px) {
-//     .footer__middle-section > a > img {
-//       width: 65px;
-//       height: 65px;
-//     }
-//     .footer__right-section-left > a > img {
-//       max-width: 213px;
-//     }
-// }
 @media screen and (max-width: 750px) {
   .footer__middle-section>a>img{
       width: 65px;

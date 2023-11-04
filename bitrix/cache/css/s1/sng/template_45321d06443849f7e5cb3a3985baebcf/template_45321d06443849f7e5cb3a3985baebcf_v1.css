@@ -3,6 +3,9 @@
 /*warning! "../../../../scss/_header-burger" be imported here.*/
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
+  .footer__right {
+    margin-top: 20px;
+  }
   .footer__content {
     flex-direction: column;
   }
