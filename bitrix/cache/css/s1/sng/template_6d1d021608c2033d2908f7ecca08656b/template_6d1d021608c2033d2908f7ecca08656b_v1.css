@@ -9,6 +9,12 @@
   .footer__content {
     flex-direction: column;
   }
+  footer br {
+    display: none;
+  }
+  footer .footer__low {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 750px) {
   .footer__middle-section > a > img {
@@ -12701,11 +12707,6 @@ header {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  .footer__low {
-    margin-bottom: 0;
-  }
-}
 .footer__license {
   margin-top: auto;
 }

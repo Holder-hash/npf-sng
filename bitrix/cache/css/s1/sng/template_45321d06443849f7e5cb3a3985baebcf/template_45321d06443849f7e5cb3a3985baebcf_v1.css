@@ -9,6 +9,12 @@
   .footer__content {
     flex-direction: column;
   }
+  footer br {
+    display: none;
+  }
+  footer .footer__low {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 750px) {
   .footer__middle-section > a > img {
