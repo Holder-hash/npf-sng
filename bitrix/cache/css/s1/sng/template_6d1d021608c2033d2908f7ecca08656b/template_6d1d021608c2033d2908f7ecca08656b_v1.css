@@ -13772,6 +13772,9 @@ header {
   .sng__box h3 {
     text-align: center;
   }
+  .sng__box ul {
+    padding-left: 20px;
+  }
   .sng__box p img {
     max-width: 500px;
   }
