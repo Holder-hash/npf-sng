@@ -13782,6 +13782,9 @@ header {
   .sng__box br {
     display: none;
   }
+  .sng__box hr {
+    display: none;
+  }
   .sng__box > div {
     flex-wrap: wrap;
     flex-direction: column;
