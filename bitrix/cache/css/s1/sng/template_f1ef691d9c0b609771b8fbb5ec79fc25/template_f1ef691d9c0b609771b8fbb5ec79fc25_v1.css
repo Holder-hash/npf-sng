@@ -18219,6 +18219,23 @@ header {
   height: 68px;
 }
 
+@media screen and (max-width: 1024px) {
+  .card__container-subtitle {
+    display: flex;
+    justify-content: center;
+  }
+  .card__container-subtitle h3 {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .client__fond {
+    flex-wrap: wrap;
+  }
+  .client__fond .card__container:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 /*body adaptation (global)*/
 @media screen and (max-width: 1024px) {
   body {
@@ -18486,6 +18503,13 @@ header {
   }
   .sng__card {
     min-width: 100%;
+  }
+  .sng__title {
+    text-align: center;
+  }
+  .sng__card-adaptation {
+    flex-direction: column;
+    align-items: center;
   }
 }
 /*footer adaptation*/

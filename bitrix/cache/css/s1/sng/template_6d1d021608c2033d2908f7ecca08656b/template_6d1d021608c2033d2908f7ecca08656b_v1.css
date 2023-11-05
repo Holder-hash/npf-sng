@@ -18729,6 +18729,13 @@ header {
   .sng__card {
     min-width: 100%;
   }
+  .sng__title {
+    text-align: center;
+  }
+  .sng__card-adaptation {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*ops adaptation*/
 @media screen and (max-width: 1024px) {
