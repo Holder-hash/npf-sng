@@ -1,10 +1,4 @@
 ﻿/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
-
-/*warning! "../../../../scss/_header-burger" be imported here.*/
-
-@import '../../../../scss/_footer-adaptation';
-@import '../../../../scss/_ops_page-adaptation';
-
 /* Chevin */
 @font-face {
   font-family: 'Chevin';
@@ -13867,7 +13861,7 @@ header {
   text-decoration: underline
 }
 
-@import "../../../../scss/_header-burger";
+
 
 .bg {
   position: absolute;
@@ -21143,8 +21137,11 @@ header {
   }
 }
 
-@import "../../../../scss/_sng_container-adaptation";
 @import "../../../../scss/_cookie-adaptation";
+@import "../../../../scss/_header-burger";
+@import "../../../../scss/_sng_container-adaptation";
+@import '../../../../scss/_ops_page-adaptation';
+@import '../../../../scss/_footer-adaptation';
 
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */

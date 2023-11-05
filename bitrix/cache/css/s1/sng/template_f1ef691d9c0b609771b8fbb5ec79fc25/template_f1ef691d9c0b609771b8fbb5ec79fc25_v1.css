@@ -1,34 +1,4 @@
 @charset "UTF-8";
-/*footer adaptation*/
-@media screen and (max-width: 1024px) {
-  footer br {
-    display: none;
-  }
-  footer .footer__low {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  .footer__content {
-    flex-direction: column;
-  }
-  .footer__image--napf {
-    padding-top: 10px;
-  }
-  .footer__right {
-    min-height: 150px;
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-  .footer__right-section-left {
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer__list {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
 /* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
 /* Chevin */
 @font-face {
@@ -18265,6 +18235,38 @@ header {
     transform: translate(0, -60%);
   }
 }
+/*cookie adaptation*/
+@media screen and (max-width: 1024px) {
+  .cookie {
+    width: 100% !important;
+  }
+  .cookie__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .cookie__body {
+    max-height: 178px;
+    overflow-y: scroll;
+  }
+  .cookie__body > h5 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .cookie__list {
+    flex-wrap: wrap;
+  }
+  .cookie__footer {
+    padding: 20px 10px 0;
+    justify-content: flex-start !important;
+  }
+  .cookie__item {
+    padding: 10px;
+    width: 100% !important;
+  }
+  .cookie__item:first-child {
+    margin-right: 0 !important;
+  }
+}
 /* burger menu */
 .burger-open-svg {
   display: block;
@@ -18486,36 +18488,34 @@ header {
     min-width: 100%;
   }
 }
-/*cookie adaptation*/
+/*footer adaptation*/
 @media screen and (max-width: 1024px) {
-  .cookie {
-    width: 100% !important;
+  footer br {
+    display: none;
   }
-  .cookie__box {
-    display: flex;
+  footer .footer__low {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .footer__content {
     flex-direction: column;
   }
-  .cookie__body {
-    max-height: 178px;
-    overflow-y: scroll;
+  .footer__image--napf {
+    padding-top: 10px;
   }
-  .cookie__body > h5 {
-    margin-left: 10px;
-    margin-right: 10px;
+  .footer__right {
+    min-height: 150px;
+    margin-top: 20px;
+    padding-top: 20px;
   }
-  .cookie__list {
+  .footer__right-section-left {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__list {
     flex-wrap: wrap;
-  }
-  .cookie__footer {
-    padding: 20px 10px 0;
-    justify-content: flex-start !important;
-  }
-  .cookie__item {
-    padding: 10px;
-    width: 100% !important;
-  }
-  .cookie__item:first-child {
-    margin-right: 0 !important;
+    gap: 5px;
   }
 }
 /* End */
