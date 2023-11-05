@@ -13766,7 +13766,7 @@ header {
     flex-direction: column;
     padding: 1px 24px 13px;
   }
-  .sng__box p {
+  .sng__box p video {
     width: 100%;
   }
   .sng__box h3 {
