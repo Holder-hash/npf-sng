@@ -14483,6 +14483,9 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 1px 24px 13px;
+    & p {
+      width: 100%;
+    }
     & h3 {
       text-align: center;
     }

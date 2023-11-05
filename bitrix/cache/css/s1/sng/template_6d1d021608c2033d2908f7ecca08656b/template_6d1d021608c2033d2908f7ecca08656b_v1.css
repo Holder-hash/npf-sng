@@ -13766,6 +13766,9 @@ header {
     flex-direction: column;
     padding: 1px 24px 13px;
   }
+  .sng__box p {
+    width: 100%;
+  }
   .sng__box h3 {
     text-align: center;
   }
