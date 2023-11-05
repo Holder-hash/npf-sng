@@ -1,7 +1,10 @@
 ﻿/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
+
 /*warning! "../../../../scss/_header-burger" be imported here.*/
+
 @import '../../../../scss/_footer-adaptation';
 @import '../../../../scss/_ops_page-adaptation';
+
 /* Chevin */
 @font-face {
   font-family: 'Chevin';
@@ -14479,43 +14482,20 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1024px) {
-  .sng__container {
-    flex-direction: column-reverse;
-  }
-}
 
 .sng__content {
   min-width: 1028px;
   margin-right: 15px
-}
-@media screen and (max-width: 1024px) {
-  .sng__content {
-    min-width: 100%;
-  }
 }
 
 .sng__right {
   min-width: 333px;
   height: 100%
 }
-@media screen and (max-width: 1024px) {
-  .sng__right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2px;
-    min-width: 100% !important;
-  }
-}
 
 .sng__cards {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
-}
-@media screen and (max-width: 1024px) {
-  .sng__cards {
-    justify-content: center;
-  }
 }
 
 .sng__card,
@@ -14549,11 +14529,6 @@ header {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   position: relative
-}
-@media screen and (max-width: 1024px) {
-  .sng__card {
-    min-width: 100%;
-  }
 }
 
 .sng__card-w276 {
@@ -21204,6 +21179,8 @@ header {
     transform: translate(0,-60%);
   }
 }
+
+@import "../../../../scss/_sng_container-adaptation";
 
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */

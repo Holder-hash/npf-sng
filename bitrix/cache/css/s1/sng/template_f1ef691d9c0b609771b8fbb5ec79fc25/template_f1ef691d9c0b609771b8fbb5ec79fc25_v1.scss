@@ -13839,8 +13839,6 @@ header {
   text-decoration: underline
 }
 
-@import "../../../../scss/_header-burger";
-
 .bg {
   position: absolute;
   min-width: 1406px;
@@ -20869,6 +20867,9 @@ header {
     transform: translate(0,-60%);
   }
 }
+
+@import "../../../../scss/_header-burger";
+@import "../../../../scss/_sng_container-adaptation";
 
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */
