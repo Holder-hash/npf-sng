@@ -13429,68 +13429,6 @@ header {
     margin-top: -87px;
   }
 }
-/*npo adaptation*/
-@media screen and (max-width: 1024px) {
-  .pension-ops__section-item > .sng__link-medium {
-    display: block;
-    width: 100%;
-  }
-  .privilege__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .privilege__left {
-    min-width: 70%;
-  }
-  .privilege__right {
-    min-width: 70%;
-    margin-top: 20px;
-  }
-  .privilege__list > div > div > p {
-    min-width: 100%;
-  }
-  .privilege__item:not(:last-child) {
-    margin-bottom: 20px !important;
-  }
-  .pension-ops__section > .pension-ops__section-item:nth-child(6) img {
-    width: 100% !important;
-  }
-  .pension-ops__section > .pension-ops__section-item:last-child div {
-    flex-direction: column;
-  }
-  .pension-ops__section > .pension-ops__section-item:last-child div img {
-    width: 100% !important;
-  }
-  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child br {
-    display: none;
-  }
-  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child a {
-    display: block;
-  }
-  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child a:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 440px) {
-  .privilege__right {
-    margin-top: 30px;
-  }
-  .privilege__list > div {
-    min-width: 100%;
-  }
-  .privilege__list > div > div {
-    flex-direction: column;
-  }
-  .privilege__list > div > div > img {
-    margin-right: 0 !important;
-  }
-  .privilege__list > div > div > p {
-    text-align: center;
-  }
-  .privilege__item:not(:last-child) {
-    margin-bottom: 30px !important;
-  }
-}
 .service {
   padding: 100px 0;
   background-color: #60a1ca;
@@ -14202,6 +14140,62 @@ header {
     white-space: nowrap;
   }
 }
+
+/*ops adaptation*/
+@media screen and (max-width: 1024px) {
+  .pension-ops__section-item>.sng__link-medium {
+    display: block;
+    width: 100%;
+  }
+  .privilege__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .privilege__left {
+    min-width: 70%;
+  }
+  .privilege__right {
+    min-width: 70%;
+    margin-top: 20px;
+  }
+
+  .privilege__list>div> {
+    min-width: 100%;
+  }
+  .privilege__list>div>div>p {
+      min-width: 100%;
+  }
+
+  .privilege__item:not(:last-child) {
+    margin-bottom: 20px !important;
+  }
+
+  .pension-ops__section:last-child div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 440px) {
+  .privilege__right {
+    margin-top: 30px;
+  }
+  .privilege__list>div {
+    min-width: 100%;
+  }
+  .privilege__list>div>div {
+    flex-direction: column;
+  }
+  .privilege__list>div>div>img {
+      margin-right: 0 !important;
+  }
+  .privilege__list>div>div>p {
+      text-align: center;
+  }
+
+  .privilege__item:not(:last-child) {
+    margin-bottom: 30px !important;
+  }
+}
+
 .form__item,
 .popup__item {
   margin: 20px 0;
