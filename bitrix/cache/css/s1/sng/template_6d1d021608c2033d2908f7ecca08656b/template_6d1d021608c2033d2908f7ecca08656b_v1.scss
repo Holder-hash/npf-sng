@@ -14159,7 +14159,7 @@ header {
     margin-bottom: 20px !important;
   }
 
-  .pension-ops__section:last-child div {
+  .pension-ops__section>.pension-ops__section-item:last-child div {
     flex-direction: column;
     img {
       width: 100% !important;

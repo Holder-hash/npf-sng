@@ -13452,19 +13452,19 @@ header {
   .privilege__item:not(:last-child) {
     margin-bottom: 20px !important;
   }
-  .pension-ops__section:last-child div {
+  .pension-ops__section > .pension-ops__section-item:last-child div {
     flex-direction: column;
   }
-  .pension-ops__section:last-child div img {
+  .pension-ops__section > .pension-ops__section-item:last-child div img {
     width: 100% !important;
   }
-  .pension-ops__section:last-child div div:last-child br {
+  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child br {
     display: none;
   }
-  .pension-ops__section:last-child div div:last-child a {
+  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child a {
     display: block;
   }
-  .pension-ops__section:last-child div div:last-child a:not(:last-child) {
+  .pension-ops__section > .pension-ops__section-item:last-child div div:last-child a:not(:last-child) {
     margin-bottom: 20px;
   }
 }
