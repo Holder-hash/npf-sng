@@ -13880,6 +13880,11 @@ header {
   text-align: justify;
 }
 
+@media screen and (max-width: 1024px) {
+  .sng__title {
+    text-align: unset;
+  }
+}
 @media screen and (max-width: 354px) {
   .sng__title {
     text-align: center;
@@ -14135,6 +14140,58 @@ header {
     white-space: nowrap;
   }
 }
+
+/*ops list adaptation*/
+@media screen and (max-width: 1024px) {
+  .pension-ops__section-item>.sng__link-medium {
+    display: block;
+    width: 100%;
+  }
+  .privilege__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .privilege__left {
+    min-width: 70%;
+  }
+  .privilege__right {
+    min-width: 70%;
+    margin-top: 20px;
+  }
+
+  .privilege__list>div> {
+    min-width: 100%;
+  }
+  .privilege__list>div>div>p {
+      min-width: 100%;
+  }
+
+  .privilege__item:not(:last-child) {
+    margin-bottom: 20px !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .privilege__right {
+    margin-top: 30px;
+  }
+  .privilege__list>div {
+    min-width: 100%;
+  }
+  .privilege__list>div>div {
+    flex-direction: column;
+  }
+  .privilege__list>div>div>img {
+      margin-right: 0 !important;
+  }
+  .privilege__list>div>div>p {
+      text-align: center;
+  }
+
+  .privilege__item:not(:last-child) {
+    margin-bottom: 30px !important;
+  }
+}
+
 .form__item,
 .popup__item {
   margin: 20px 0;
