@@ -18232,6 +18232,9 @@ header {
   .client__fond {
     flex-wrap: wrap;
   }
+  .client__fond .card__container .sng__card {
+    max-height: 290px;
+  }
   .client__fond .card__container:not(:last-child) {
     margin-bottom: 20px;
   }
