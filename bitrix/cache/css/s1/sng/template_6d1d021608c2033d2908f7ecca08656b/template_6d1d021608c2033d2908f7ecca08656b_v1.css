@@ -13452,6 +13452,9 @@ header {
   .privilege__item:not(:last-child) {
     margin-bottom: 20px !important;
   }
+  .pension-ops__section > .pension-ops__section-item:nth-child(6) img {
+    width: 100% !important;
+  }
   .pension-ops__section > .pension-ops__section-item:last-child div {
     flex-direction: column;
   }
