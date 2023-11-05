@@ -12,11 +12,16 @@
   .footer__content {
     flex-direction: column;
   }
-  .footer__left {
-    padding-bottom: 20px;
-  }
   .footer__image--napf {
    padding-top: 10px;
+  }
+  .footer__right {
+    min-height: 150px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .footer__right-section-left {
+    justify-content: space-between;
   }
 }
 // @media screen and (max-width: 750px) {
