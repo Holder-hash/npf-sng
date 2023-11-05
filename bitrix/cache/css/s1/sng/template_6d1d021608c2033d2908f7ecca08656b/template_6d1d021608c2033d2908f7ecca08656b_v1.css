@@ -15023,6 +15023,11 @@ header {
     margin-bottom: 50px;
   }
 }
+@media screen and (min-width: 753px) {
+  .contacts__row-mobile__down > .contacts__col {
+    margin-bottom: 0px !important;
+  }
+}
 .contacts__row-around {
   justify-content: space-around;
 }
