@@ -1,6 +1,7 @@
 ﻿/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
 /*warning! "../../../../scss/_header-burger" be imported here.*/
 @import '../../../../scss/_footer-adaptation';
+@import '../../../../scss/_ops_page-adaptation';
 /* Chevin */
 @font-face {
   font-family: 'Chevin';
@@ -14130,79 +14131,6 @@ header {
   }
 }
 
-/*npo adaptation*/
-@media screen and (max-width: 1024px) {
-  .pension-ops__section-item>.sng__link-medium {
-    display: block;
-    width: 100%;
-  }
-  .privilege__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .privilege__left {
-    min-width: 70%;
-  }
-  .privilege__right {
-    min-width: 70%;
-    margin-top: 20px;
-  }
-
-  .privilege__list>div> {
-    min-width: 100%;
-  }
-  .privilege__list>div>div>p {
-      min-width: 100%;
-  }
-
-  .privilege__item:not(:last-child) {
-    margin-bottom: 20px !important;
-  }
-
-  .pension-ops__section>.pension-ops__section-item:nth-child(6) img {
-    width: 100% !important;
-  }
-
-  .pension-ops__section>.pension-ops__section-item:last-child div {
-    flex-direction: column;
-    img {
-      width: 100% !important;
-    }
-    div:last-child {
-      br {
-        display: none;
-      }
-      a {
-        display: block;
-      }
-      a:not(:last-child) {
-        margin-bottom: 20px;
-      }
-    } 
-  }
-}
-@media screen and (max-width: 440px) {
-  .privilege__right {
-    margin-top: 30px;
-  }
-  .privilege__list>div {
-    min-width: 100%;
-  }
-  .privilege__list>div>div {
-    flex-direction: column;
-  }
-  .privilege__list>div>div>img {
-      margin-right: 0 !important;
-  }
-  .privilege__list>div>div>p {
-      text-align: center;
-  }
-
-  .privilege__item:not(:last-child) {
-    margin-bottom: 30px !important;
-  }
-}
-
 .service {
   padding: 100px 0;
   background-color: #60a1ca;
@@ -14568,6 +14496,9 @@ header {
     }
     & .npo-list ul{
       padding-left: 20px !important;
+    }
+    & br {
+      display: none;
     }
   }
   .sng__box>div {
