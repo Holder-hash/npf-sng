@@ -12250,6 +12250,39 @@ header {
   display: block !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .panel {
+    display: none;
+    z-index: 0;
+  }
+  .bg {
+    z-index: 0 !important;
+    display: none;
+  }
+  .panel__item {
+    margin-bottom: 3px;
+  }
+}
+.panel__item-box-fond {
+  height: auto;
+  display: none;
+}
+
+.panel__item-box-program {
+  height: auto;
+  display: none;
+}
+
+.panel__item-box-results {
+  height: auto;
+  display: none;
+}
+
+.panel__item-box-ourClients {
+  height: auto;
+  display: none;
+}
+
 .nav,
 .nav__list {
   display: flex;

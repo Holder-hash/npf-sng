@@ -1,7 +1,6 @@
-﻿/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
-/*warning! "../../../../scss/_header-burger" be imported here.*/
-@import '../../../../scss/_footer-adaptation';
-@import '../../../../scss/_ops_page-adaptation';
+﻿@import '../../../../scss/_footer-adaptation';
+
+/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
 /* Chevin */
 @font-face {
   font-family: 'Chevin';
@@ -1737,8 +1736,7 @@ screen and (max-height: 300px) {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  /* *display: inline; */
-  display: inline;
+  *display: inline;
 }
 
 .selectize-control.multi .selectize-input>div {
@@ -2330,7 +2328,7 @@ screen and (max-height: 300px) {
   border: 0;
 }
 
-/* @charset "UTF-8"; */
+// @charset "UTF-8";
 
 :root {
   --blue: #007bff;
@@ -3173,11 +3171,10 @@ pre code {
 }
 
 .col-12 {
-  /* display: flex; */
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  max-width: 100%;
+  max-width: 100%
 }
 
 .order-first {
@@ -6131,8 +6128,6 @@ input[type=submit].btn-block {
 .navbar-dark .navbar-text a:hover {
   color: #fff
 }
-
-
 
 .card {
   position: relative;
@@ -12590,8 +12585,6 @@ body {
   min-width: 1406px
 }
 
-
-
 *,
 :after,
 :before {
@@ -12718,13 +12711,10 @@ img {
 }
 
 .main__sticky {
-  margin-top: 372px
+  margin-top: 326px
 }
-@media screen and (max-width: 1024px) {
-  .main__sticky {
-    margin-top: 333px !important;
-  }
-}
+
+
 
 footer,
 header {
@@ -12755,15 +12745,16 @@ header {
 
 .head__sticky {
   position: fixed;
-  top: 200px;
+  top: 194px;
   left: 0;
   right: 0
 }
 
 .nav {
-  width: 100%;
-  display: flex;
+  width: 100%
 }
+
+
 
 .nav,
 .nav__list {
@@ -12794,6 +12785,10 @@ header {
 
 .nav__list-middle li {
   margin-right: 1em
+}
+
+.nav__list-right li:last-child {
+  margin-left: 1.1em
 }
 
 .nav__item {
@@ -13221,22 +13216,6 @@ header {
   text-align: center
 }
 
-/*news adaptation*/
-
-@media screen and (max-width: 1024px) {
-  .news__link {
-    height: auto;
-    width: 100%;
-  }
-  .news__body>.row {
-    justify-content: center;
-  }
-  .col-4 {
-    min-width: 100%;
-  }
-
-}
-
 .footer {
   background-color: #3764a0;
   color: #fff;
@@ -13306,8 +13285,6 @@ header {
   justify-content: space-between
 }
 
-
-
 .footer__left,
 .footer__middle-section {
   display: -webkit-box;
@@ -13354,8 +13331,6 @@ header {
   color: #fff;
   text-decoration: underline
 }
-
-
 
 #cert-grey {
   margin-top: 0 !important
@@ -13975,45 +13950,6 @@ header {
   margin-left: 40%
 }
 
-/*contract adaptation*/
-@media screen and (max-width: 1024px) {
-  .contract__box {
-    flex-direction: column-reverse;
-  }
-  .contract__hero {
-    width: 100%;
-  }
-  .contract__hero-number {
-    float: left;
-  }
-  .contract__info {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .contract___adaptBox {
-    display: flex;
-    width: 100%;
-    height: inherit;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .contract__hero-title {
-    font-size: 30px;
-  }
-  .contract__hero-subtitle {
-    width: 100%;
-  }
-
-  .contract__img {
-    width: 350px;
-    height: 190px;
-    display: block;
-    float: right;
-  }
-}
-
 .ops {
   background-color: #fff
 }
@@ -14061,27 +13997,6 @@ header {
 
 .ops__link {
   margin-top: 20px
-}
-
-/*ops adaptation*/
-
-@media screen and (max-width: 1024px) {
-  .ops__box {
-    flex-direction: column;
-  }
-  .ops__info {
-    width: 100%;
-  }
-  .ops__img {
-    min-width: 480px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .ops__img {
-    min-width: 0 !important;
-    width: 280px;
-    margin-top: -87px;
-  }
 }
 
 .service {
@@ -14144,19 +14059,6 @@ header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
-}
-
-/*service adaptation*/
-@media screen and (max-width: 1024px) {
-
-  .service__right {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-  .service__box {
-    padding: 11px;
-  }
 }
 
 .search-menu__list {
@@ -14430,45 +14332,6 @@ header {
   padding: 1px 50px 32px;
   font-size: .8rem
 }
-@media screen and (max-width: 1024px) {
-  .sng__box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1px 24px 13px;
-    & p video {
-      width: 100%;
-    }
-    & h3 {
-      text-align: center;
-    }
-    & ul {
-      padding-left: 20px;
-    }
-    & p img {
-      max-width: 500px;
-      // width: 100% !important;
-    }
-    & .graf-img {
-      max-width: 100%;
-      overflow-y: scroll;
-    }
-    & .npo-list ul{
-      padding-left: 20px !important;
-    }
-    & br {
-      display: none;
-    }
-    & hr {
-      display: none;
-    }
-  }
-  .sng__box>div {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-}
 
 .sng__box a:hover {
   text-decoration: underline
@@ -14477,45 +14340,22 @@ header {
 .sng__container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (max-width: 1024px) {
-  .sng__container {
-    flex-direction: column-reverse;
-  }
+  display: flex
 }
 
 .sng__content {
   min-width: 1028px;
   margin-right: 15px
 }
-@media screen and (max-width: 1024px) {
-  .sng__content {
-    min-width: 100%;
-  }
-}
 
 .sng__right {
   min-width: 333px;
   height: 100%
 }
-@media screen and (max-width: 1024px) {
-  .sng__right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2px;
-    min-width: 100% !important;
-  }
-}
 
 .sng__cards {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
-}
-@media screen and (max-width: 1024px) {
-  .sng__cards {
-    justify-content: center;
-  }
 }
 
 .sng__card,
@@ -14549,11 +14389,6 @@ header {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   position: relative
-}
-@media screen and (max-width: 1024px) {
-  .sng__card {
-    min-width: 100%;
-  }
 }
 
 .sng__card-w276 {
@@ -14655,16 +14490,6 @@ header {
   font-weight: 500;
   text-align: justify
 }
-@media screen and (max-width: 1024px) {
-  .sng__title {
-    text-align: unset;
-  }
-}
-@media screen and (max-width: 354px) {
-  .sng__title {
-    text-align: center;
-  }
-}
 
 .sng__link {
   color: #fff;
@@ -14749,19 +14574,10 @@ header {
   border-radius: 2px;
   outline: none
 }
-@media screen and (max-width: 1024px) {
-  .sng__box>div>.sng__link-medium {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 8 * (100vw - 320px) / 880);
-    margin-bottom: 10px;
-  }
-}
 
 .sng__link-medium--background {
   background-color: #32a5a5;
-  color: #fff;
+  color: #fff
 }
 
 .sng__link-medium--background:hover {
@@ -14871,20 +14687,6 @@ header {
   height: auto
 }
 
-@media screen and (max-width: 1024px) {
-  .contacts__btn-box {
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-  .contacts__btn-box>a {
-    margin-left: 0 !important;
-    min-width: 100%;
-  }
-  .contacts__btn {
-    min-width: 100%;
-  }
-}
-
 .breadcrumbs {
   margin-top: 1em
 }
@@ -14922,20 +14724,6 @@ header {
 .breadcrumbs i {
   margin: 0 1em;
   color: #32a5a5
-}
-
-@media screen and (max-width:1024px) {
-  .breadcrumbs__content>div:nth-child(2) {
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-  }
-  .breadcrumbs__text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
 }
 
 .form__item,
@@ -15784,21 +15572,6 @@ header {
   background-color: #c4c7cc
 }
 
-@media screen and (max-width: 1024px) {
-  .bx-yandex-view-layout {
-    max-width: 100% !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  .ymaps-map {
-    max-height: 300px !important;
-  }
-  .bx-yandex-map {
-    max-height: 300px !important;
-  }
-}
-
-
 .contacts__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15821,30 +15594,6 @@ header {
   -ms-flex-pack: start;
   justify-content: flex-start
 }
-@media screen and (max-width: 1024px) {
-  .contacts h2 {
-    text-align: center;
-  }
-
-  .contacts__row-left {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .contacts__row-boss {
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-
-  .contacts__row-mobile__down>.contacts__col:not(:last-child) {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 753px) {
-  .contacts__row-mobile__down>.contacts__col {
-    margin-bottom: 0px !important;
-  }
-}
 
 .contacts__row-around {
   -ms-flex-pack: distribute;
@@ -15857,61 +15606,11 @@ header {
   left: 340px;
   width: 250px
 }
-@media screen and (max-width: 1024px) {
-  .contacts__info {
-    min-width: 352px !important;
-    position: relative;
-    left: 0;
-    text-align: center;
-    padding: 0 24px;
-  }
-  .contacts__info p {
-    max-height: 215px;
-    overflow-y: scroll;
-  }
-
-  .contacts__box {
-    margin-right: 0 !important;
-  }
-
-  .more__contacts-box {
-    justify-content: center;
-    // gap: 50px;
-  }
-  .more__contacts-box>.contacts__col:not(:last-child) {
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .contacts__info {
-    min-width: 280px !important;
-    position: relative;
-    left: 0;
-    text-align: center;
-    max-width: 350px;
-  }
-  .contacts__info p {
-    max-width: 320px;
-    overflow-y: inherit;
-    height: auto;
-    margin-bottom: 100px;
-  }
-
-  .contacts__row-boss {
-    gap: 10px;
-  }
-}
 
 .contacts__email {
   margin-bottom: 10px;
   font-size: .9rem;
   font-weight: 700
-}
-@media screen and (max-width: 1024px) {
-  .contacts__email {
-    width: 100%;
-  }
 }
 
 .contacts__text {
@@ -16104,83 +15803,6 @@ header {
 .slick__dots li.slick-active button:before {
   opacity: 1;
   content: url(../../../../../../local/markup/dist/img/dots_active8e10ceea5738c3cf6e10193679b18e14.svg)
-}
-
-/*slick-slider adaptation*/
-@media screen and (max-width:1024px) {
-  .hero__adaptation-elem {
-    width: 300px;
-  }
-  .hero__img-adaptation {
-    position: absolute;
-    top: 50px;
-    width: 100px;
-    height: auto;
-    margin: 0 !important;
-  }
-  .hero__title {
-    font-size: 25px;
-    line-height: 35px;
-    max-width: 450px;
-  }
-  .hero__description {
-    max-width: 550px;
-    line-height: 1.5;
-  }
-
-  .hero__item-fond_28 {
-    background-image: none;
-  }
-}
-@media screen and (max-width: 560px) {
-  .hero__title {
-    max-width: 350px;
-  }
-  .hero__title-adaptation {
-    width: 100%;
-  }
-  .hero__description {
-    max-width: 350px;
-  }
-  .hero__img-adaptation {
-    width: 80px;
-  }
-}
-@media screen and (max-width: 415px) {
-  .hero__img-2 {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 450px) {
-  .hero__img-1 {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 380px) {
-  .hero__title {
-    max-width: 260px;
-    font-size: 20px;
-    margin-bottom: 0px !important;
-    line-height: 25px;
-  }
-  .hero__description {
-    max-width: 260px;
-    font-size: 14px;
-    margin-top: 0px !important;
-  }
-  .hero__img-adaptation {
-    display: none !important;
-  }
-  .hero__adaptation-elem {
-    max-width: 250px;
-    height: 100px !important;
-  }
-  .hero__img-numbers {
-    height: 25px !important;
-  }
-  .contract__img {
-    max-width: 290px;
-  }
 }
 
 .hint {
@@ -21149,43 +20771,86 @@ header {
   border-color: white !important;
 }
 
-/*cookie adaptation*/
-@media screen and (max-width: 1024px) { 
-  .cookie {
-    width: 100% !important;
-  }
+/* End */
 
-  .cookie__box{
-    display: flex;
-    flex-direction: column;
-  }
 
-  .cookie__body {
-    max-height: 178px;
-    overflow-y: scroll;
-  }
-  .cookie__body>h5 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+/* Start:/fiz-liz/dogovor-main/style.css?16939825191062*/
+.card__title {
+  text-align: center;
+}
 
-  .cookie__list {
-    flex-wrap: wrap;
-  }
+.card__desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
 
-  .cookie__footer {
-    padding: 20px 10px 0;
-    justify-content: flex-start !important;
-  }
+.card__box {
+  padding: 10px;
+  width: 300px;
+}
 
-  .cookie__item  {
-    padding: 10px;
-    width: 100% !important;
-  }
+.card__btn {
+  color: #ffffff !important;
+  white-space: nowrap;
+  width: 243px;
+  text-align: center;
+  padding: 8px 8px;
+}
 
-  .cookie__item:first-child {
-    margin-right: 0 !important;
-  }
+.client__fond .sng__card-description {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card__img {
+  width: 30px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.card__line-right {
+  border-right: 1px solid #C3C3C3;
+}
+
+.client__description {
+  display: flex;
+  gap: 30px;
+}
+
+.card__height {
+  height: 100%;
+}
+
+.card__subtitle {
+  text-align: center;
+}
+
+.card__container {
+  position: relative;
+}
+
+.card-ops,
+.card-npo,
+.card-partner {
+  position: absolute;
+}
+
+.card-ops {
+  left: 126px;
+}
+
+.card-npo {
+  left: 133px;
+}
+
+.card-partner {
+  left: 100px;
+}
+
+.card__container-subtitle {
+  height: 68px;
 }
 
 /*body adaptation (global)*/
@@ -21208,3 +20873,4 @@ header {
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */
 /* /local/components/sng/cookie/templates/.default/style.css?16160625421224 */
+/* /fiz-liz/dogovor-main/style.css?16939825191062 */
