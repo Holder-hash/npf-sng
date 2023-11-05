@@ -18755,38 +18755,6 @@ header {
   border-color: white !important;
 }
 
-/*cookie adaptation*/
-@media screen and (max-width: 1024px) {
-  .cookie {
-    width: 100% !important;
-  }
-  .cookie__box {
-    display: flex;
-    flex-direction: column;
-  }
-  .cookie__body {
-    max-height: 178px;
-    overflow-y: scroll;
-  }
-  .cookie__body > h5 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .cookie__list {
-    flex-wrap: wrap;
-  }
-  .cookie__footer {
-    padding: 20px 10px 0;
-    justify-content: flex-start !important;
-  }
-  .cookie__item {
-    padding: 10px;
-    width: 100% !important;
-  }
-  .cookie__item:first-child {
-    margin-right: 0 !important;
-  }
-}
 /*body adaptation (global)*/
 @media screen and (max-width: 1024px) {
   body {
@@ -18821,6 +18789,38 @@ header {
   }
   .sng__card {
     min-width: 100%;
+  }
+}
+/*cookie adaptation*/
+@media screen and (max-width: 1024px) {
+  .cookie {
+    width: 100% !important;
+  }
+  .cookie__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .cookie__body {
+    max-height: 178px;
+    overflow-y: scroll;
+  }
+  .cookie__body > h5 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .cookie__list {
+    flex-wrap: wrap;
+  }
+  .cookie__footer {
+    padding: 20px 10px 0;
+    justify-content: flex-start !important;
+  }
+  .cookie__item {
+    padding: 10px;
+    width: 100% !important;
+  }
+  .cookie__item:first-child {
+    margin-right: 0 !important;
   }
 }
 /* End */
