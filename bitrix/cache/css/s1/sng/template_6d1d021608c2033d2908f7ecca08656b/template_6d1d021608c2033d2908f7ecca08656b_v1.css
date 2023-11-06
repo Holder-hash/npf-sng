@@ -12571,6 +12571,11 @@ header {
   box-shadow: 0 2px 5px 0 rgba(85, 159, 210, 0.33);
 }
 
+@media screen and (max-width: 1024px) {
+  .news-page__box {
+    min-height: auto;
+  }
+}
 .news-page__box:after {
   position: absolute;
   z-index: 7;
