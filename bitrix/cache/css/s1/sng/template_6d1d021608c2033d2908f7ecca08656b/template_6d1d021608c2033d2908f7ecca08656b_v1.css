@@ -18386,6 +18386,17 @@ header {
     border-color: #dee2e6;
   }
 }
+@media screen and (max-width: 1024px) {
+  .news-page__row {
+    flex-direction: column;
+  }
+  .news-page__row .news-page__col {
+    min-width: 100%;
+  }
+  .news-page__row .news-page__col .news-page__description {
+    overflow-y: scroll;
+  }
+}
 
 /* End */
 /* Start:/local/components/sng/cookie/templates/.default/style.css?16160625421224*/

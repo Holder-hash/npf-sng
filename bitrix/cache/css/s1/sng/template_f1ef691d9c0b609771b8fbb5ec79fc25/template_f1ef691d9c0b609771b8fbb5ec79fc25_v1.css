@@ -18140,6 +18140,11 @@ header {
 }
 
 /* End */
+@media screen and (max-width: 1024px) {
+  .news-page__row {
+    flex-direction: column;
+  }
+}
 /* Start:/fiz-liz/dogovor-main/style.css?16939825191062*/
 .card__title {
   text-align: center;

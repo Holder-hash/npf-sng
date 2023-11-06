@@ -21041,6 +21041,19 @@ header {
   }
 }
 
+
+@media screen and (max-width: 1024px) { 
+  .news-page__row {
+    flex-direction: column;
+    .news-page__col {
+      min-width: 100%;
+      .news-page__description {
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+
 /*# sourceMappingURL=style.bundle.css.map*/
 /* End */
 
