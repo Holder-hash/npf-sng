@@ -18477,6 +18477,11 @@ header {
   border-color: white !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .certificate-box {
+    margin-bottom: 20px;
+  }
+}
 /*body adaptation (global)*/
 @media screen and (max-width: 1024px) {
   body {
