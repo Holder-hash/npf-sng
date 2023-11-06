@@ -25,10 +25,41 @@
         align-items: center;
     }
     .sng__box {
-        img {
-            max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1px 24px 13px;
+        & p video {
+          width: 100%;
         }
-    }
+        & h3 {
+          text-align: center;
+        }
+        & ul, ol {
+          padding-left: 20px;
+        }
+        & p img {
+          max-width: 500px;
+        }
+        & .graf-img {
+          max-width: 100%;
+          overflow-y: scroll;
+        }
+        & .npo-list ul{
+          padding-left: 20px !important;
+        }
+        & br {
+          display: none;
+        }
+        & hr {
+          display: none;
+        }
+      }
+      .sng__box>div {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    
 }
 @media screen and (max-width: 500px) {
     .sng__box {
