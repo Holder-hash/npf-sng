@@ -18525,6 +18525,9 @@ header {
   .sng__box table {
     margin: 0;
   }
+  .sng__box table td > p {
+    font-size: 12px !important;
+  }
 }
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
