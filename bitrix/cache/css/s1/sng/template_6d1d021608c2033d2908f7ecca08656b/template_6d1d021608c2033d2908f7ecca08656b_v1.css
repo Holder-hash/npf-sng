@@ -18736,6 +18736,14 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .sng__box img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sng__box img {
+    max-height: 300px;
+  }
 }
 /*ops adaptation*/
 @media screen and (max-width: 1024px) {
