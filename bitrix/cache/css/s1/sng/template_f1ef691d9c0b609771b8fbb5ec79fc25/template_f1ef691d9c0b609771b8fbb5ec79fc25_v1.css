@@ -18522,6 +18522,9 @@ header {
   .sng__box img {
     max-height: 300px;
   }
+  .sng__box table {
+    margin: 0;
+  }
 }
 /*footer adaptation*/
 @media screen and (max-width: 1024px) {
