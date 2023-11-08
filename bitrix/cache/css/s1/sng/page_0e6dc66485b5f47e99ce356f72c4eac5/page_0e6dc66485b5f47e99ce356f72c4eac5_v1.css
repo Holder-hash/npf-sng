@@ -41,6 +41,8 @@
     .form-check-nowrap {
         white-space: nowrap;
         margin-top: 0 !important;
+        /* max-width: 260px;
+        min-width: 260px; */
     }
     .calc__print-contain {
         align-self: flex-end !important;
