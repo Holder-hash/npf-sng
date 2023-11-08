@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="description" content="Карта сайта">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,20 +67,48 @@
         <header id="head" class="head">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 header-col-12">
+                       
+                        <a href="../index.htm" class="nav__link desktop_logo">
+                            <img src="../local/markup/dist/img/logo.svg" alt="">
+                        </a>
                         <nav class="nav">
-                            <ul class="nav__list nav__list-left">
-                                <li class="nav__item">
-                                    <a href="../index.htm" class="nav__link">
-                                        <img src="../local/markup/dist/img/logo.svg" alt="">
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="../index.htm" class="nav__link adaptive__logo">
+                                <img src="../local/markup/dist/img/logo.svg" alt="">
+                            </a>
+
                             <ul class="nav__list nav__list-middle">
-                                <li class="nav__item"><a href="../history/index.htm" class="nav__link nav__open" data-menu-id="fond">О Фонде</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="../fiz-liz/index.htm" class="nav__link nav__open" data-menu-id="program">Программы</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="../results/index.htm" class="nav__link nav__open" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow"></div></li>
-                                <li class="nav__item"><a href="../our-clients/index.htm" class="nav__link nav__open" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow"></div></li>
+                                <li class="nav__item nav__fond-li menu__item"><a href="../history/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="fond">О Фонде</a> <!--nav__open nav__list-link new class-->
+                                    <div class="nav__arrow arrow nav__arrow-fond"></div>                
+                                    <div class="panel__item-box-fond links_box">
+                                        <div class="panel__item"><a href="../history/index.htm" class="panel__link">История</a></div>
+                                        <div class="panel__item"><a href="../news/index.htm" class="panel__link">Новости</a></div>
+                                        <div class="panel__item"><a href="../allinfo/index.htm" class="panel__link">Раскрытие информации</a></div>
+                                        <div class="panel__item"><a href="../rekvisit/index.htm" class="panel__link">Официальные реквизиты</a>
+                                        <div class="panel__item"><a href="../zakon/index.htm" class="panel__link">Законодательство</a></div>
+                                        <div class="panel__item"><a href="../links/index.htm" class="panel__link">Полезные ссылки</a></div>
+                                    </div></li>
+                                <li class="nav__item nav__program-li menu__item"><a href="../fiz-liz/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="program">Программы</a><div class="nav__arrow arrow nav__arrow-program"></div> <!--nav__arrow-program new class-->
+                                    <div class="panel__item-box-program links_box">
+                                        <div class="panel__item"><a href="../fiz-liz/NPO/index.htm" class="panel__link">Негосударственное пенсионное обеспечение</a></div>
+                                        <div class="panel__item"><a href="../fiz-liz/OPS/index.htm" class="panel__link">Обязательное пенсионное страхование</a></div>
+                                        <div class="panel__item"><a href="../fiz-liz/sofinance/index.htm" class="panel__link">Программа «Софинансирование»</a></div>
+                                        <div class="panel__item"><a href="../fiz-liz/Part/index.htm" class="panel__link">Программа «Партнерство»</a></div>
+                                         <div class="panel__item"><a href="../fiz-liz/sved/index.htm" class="panel__link">Для обязательного сведения</a></div>
+                                    </div></li>
+                                <li class="nav__item nav__results-li menu__item"><a href="../results/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="results">Показатели деятельности</a><div class="nav__arrow arrow nav__arrow-results"></div> <!--nav__arrow-result new class-->
+                                <div class="panel__item-box-results links_box">
+                                    <div class="panel__item"><a href="../results/OPS/index.htm" class="panel__link">Инвестиционная политика ОПС</a></div>
+                                    <div class="panel__item"><a href="../results/NPO/index.htm" class="panel__link">Инвестиционная политика НПО</a></div>
+                                    <div class="panel__item"><a href="..//results/UK" class="panel__link">Сведения об управляющих компаниях</a></div>
+                                </div></li>
+                                <li class="nav__item nav__our-clients-li menu__item"><a href="../our-clients/index.htm" class="nav__link nav__open nav__list-link" data-menu-id="our-clients">Клиентам НПФ</a><div class="nav__arrow arrow nav__arrow-ourClients"></div> <!--nav__arrow-ourClients new class-->
+                                <div class="panel__item-box-ourClients links_box">
+                                    <div class="panel__item"><a href="../our-clients/index.htm" class="panel__link">Обязательное пенсионное страхование</a></div>                                      
+                                    <div class="panel__item"><a href="../our-clients/index.htm" class="panel__link">Негосударственное пенсионное обеспечение</a></div>
+                                    <div class="panel__item"><a href="../our-clients/index.htm" class="panel__link">Негосударственная пенсия от работодателя ПАО «Сургутнефтегаз»</a></div>
+                                    <div class="panel__item"><a href="../our-clients/index.htm" class="panel__link">Другое</a></div>
+                                </div></li>
                             </ul>
                             <ul class="nav__list nav__list-right">
                                 <li class="nav__item d-flex">
@@ -107,15 +136,23 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="nav__list">
-                                <li class="nav__item d-flex flex-column align-items-center justify-content-center">
-                                    <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative" target="_blank">
+                            <ul class="nav__list nav__list__lastChild">
+                                <li class="nav__last__child nav__item d-flex flex-column align-items-center justify-content-center">
+                                    <a href="https://client.npf-sng.ru/" class="sng__link-medium sng__link-medium--background mb-2 position-relative nav__lastChild-btn" target="_blank">
                                         Личный кабинет
                                     </a>
-                                    <a href="../contacts/index.htm" class="nav__link" data-menu-id="contacts">Обратиться в Фонд</a>
+                                    <a href="contacts/index.htm" class="nav__link" data-menu-id="contacts">Обратиться в Фонд</a>
                                 </li>
                             </ul>
                         </nav>
+                        <div class="burger-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" class="burger-open-svg">
+                                <path fill="#0069AA" fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.508 0h26.984a1.5 1.5 0 1 1 0 3H1.508A1.5 1.5 0 0 1 0 1.5zm0 10c0-.828.665-1.5 1.503-1.5h16.994c.83 0 1.503.666 1.503 1.5 0 .828-.665 1.5-1.503 1.5H1.503C.673 13 0 12.334 0 11.5zm22 0c0-.828.668-1.5 1.505-1.5h4.99a1.5 1.5 0 1 1 0 3h-4.99A1.5 1.5 0 0 1 22 11.5zm-22 10A1.5 1.5 0 0 1 1.508 20h26.984a1.5 1.5 0 1 1 0 3H1.508A1.5 1.5 0 0 1 0 21.5z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="burger-close-svg">
+                                <path fill="#0069AA" fill-rule="evenodd" d="M14.373 10.84l6.724-6.723c.77-.772.773-2.043-.01-2.826l-.7-.7C19.6-.193 18.34-.194 17.56.58l-6.723 6.725L4.114.58c-.778-.776-2.04-.775-2.826.01l-.7.7c-.783.784-.782 2.055-.01 2.827l6.724 6.724-6.724 6.725c-.772.772-.773 2.043.01 2.826l.7.7c.786.787 2.048.788 2.826.01l6.723-6.723L17.56 21.1c.78.777 2.04.776 2.827-.01l.7-.7c.783-.783.78-2.054.01-2.826l-6.724-6.723z"/>
+                              </svg>
+                        </div>
                     </div>  
                 </div>   
             </div>
@@ -588,5 +625,6 @@
         </div>
     </div>
 </div></div>
+<script type="text/javascript" src="../bitrix/js/script/script.js"></script>
 </body>
 </html>
