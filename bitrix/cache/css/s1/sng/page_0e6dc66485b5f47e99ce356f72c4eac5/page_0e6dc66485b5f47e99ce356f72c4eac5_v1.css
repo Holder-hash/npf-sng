@@ -38,6 +38,9 @@
     .calc__label {
         white-space: unset;
     }
+    .form-check-nowrap {
+        white-space: nowrap;
+    }
 }
 .calc__p {
     line-height: 1.51;
@@ -235,14 +238,7 @@
 #percent-check {
     margin-top: 0.15rem;
 }
-
-@media screen and (max-width: 500px) {
-    .print-btn {
-        padding-left: 10px;
-    }
-}
 /* End */
-
 
 /* Start:/local/components/sng/banner/templates/.default/style.css?15846080931266*/
 .banner-1{
