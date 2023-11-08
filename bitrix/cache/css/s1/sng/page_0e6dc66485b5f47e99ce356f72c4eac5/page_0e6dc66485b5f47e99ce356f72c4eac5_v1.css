@@ -34,6 +34,11 @@
     font-size: 13px !important;
     white-space: nowrap;
 }
+@media screen and (max-width: 1024px) {
+    .calc__label {
+        white-space: unset;
+    }
+}
 .calc__p {
     line-height: 1.51;
     font-size: 13px !important;
@@ -251,7 +256,7 @@
         margin-bottom: 10px;
     }
   }
-  
+
 .banner-1__box {
     display: flex;
     align-items: center;

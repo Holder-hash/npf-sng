@@ -3478,7 +3478,7 @@ textarea.form-control {
 
 @media screen and (max-width: 500px) {
   .calc .form-row {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .form-row > .col,
