@@ -30,7 +30,19 @@
     visibility:visible;
 }
 .clone thead, .clone tfoot{background:transparent;}
-
+@media screen and (max-width: 1024px) {
+    .table-wrapper-adaptation {
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+    .table-scroll {
+        max-width: 100%;
+        overflow-x: scroll; 
+    }
+    .clone {
+        display: none;
+    }
+}
 /* End */
 
 
