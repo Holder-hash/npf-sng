@@ -18399,6 +18399,7 @@ header {
     align-items: center;
   }
   .sng__box {
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18429,9 +18430,15 @@ header {
   .sng__box hr {
     display: none;
   }
+  .sng__box img {
+    max-width: 100%;
+  }
   .sng__box > div {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .offset-1 {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 500px) {
