@@ -15007,7 +15007,7 @@ header {
 
 .form__item--flex .btn {
   white-space: nowrap;
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 .form__item--width-full {
@@ -21193,6 +21193,12 @@ header {
   }
 }
 
+ /*important styles*/
+@media screen and (max-width: 1024px) {
+  .form-check-nowrap {
+      margin-top: 0 !important;
+  }
+}
 @import "../../../../scss/_cookie-adaptation";
 @import "../../../../scss/_header-burger";
 @import "../../../../scss/_sng_container-adaptation";

@@ -40,8 +40,13 @@
     }
     .form-check-nowrap {
         white-space: nowrap;
+        margin-top: 0 !important;
+    }
+    .calc__print-contain {
+        align-self: flex-end !important;
     }
 }
+
 .calc__p {
     line-height: 1.51;
     font-size: 13px !important;

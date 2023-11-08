@@ -18525,6 +18525,12 @@ header {
     min-width: 100%;
   }
 }
+/*important styles*/
+@media screen and (max-width: 1024px) {
+  .form-check-nowrap {
+    margin-top: 0 !important;
+  }
+}
 /*cookie adaptation*/
 @media screen and (max-width: 1024px) {
   .cookie {

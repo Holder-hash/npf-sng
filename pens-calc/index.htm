@@ -347,7 +347,7 @@
                         <div class="form-group d-flex justify-content-center align-items-center">
 <!--                            <label for="salary" class="col-form-label col-form-label-md calc__label">Размер заработной платы, рублей в месяц</label>-->
 <!--                            <input name="salary" type="text" class="form-control form-control-sm calc__input calc__space" id="salary">-->
-                            <div class="form-check mt-4 form-check-nowrap">
+                            <div class="form-check mt-4 form-check-nowrap"> <!--new class form-check-nowrap-->
                                 <input type="checkbox" name="work-sng" class="form-check-input" id="work-sng">
                                 <label for="work-sng" class="form-check-label calc__label">Место работы ПАО «Сургутнефтегаз»</label>
                                 <span class="hint">
@@ -364,7 +364,7 @@
                         </div>
                         
                         <iframe id="printFrame" style="display:none;"></iframe>
-                        <div style="display: flex; align-self: stretch;">
+                        <div style="display: flex; align-self: stretch;" class="calc__print-contain"> <!--new class calc__print-contain-->
                             <div class="calc__print print_btn">
                                 <a class="print-btn open-link" href="print.php.html" title="Печать">
                                     <svg width="24px" height="22px" viewbox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
