@@ -18845,7 +18845,7 @@ header {
   .sng__box table {
     margin: 0;
   }
-  .sng__box table td > p {
+  .sng__box table td > p, .sng__box table span {
     font-size: 12px !important;
   }
 }
