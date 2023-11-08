@@ -3735,6 +3735,11 @@ textarea.form-control {
   margin-right: -5px;
   margin-left: -5px
 }
+@media screen and (max-width: 500px) {
+  .calc .form-row {
+    flex-direction: column-reverse;
+  }
+}
 
 .form-row>.col,
 .form-row>[class*=col-] {
