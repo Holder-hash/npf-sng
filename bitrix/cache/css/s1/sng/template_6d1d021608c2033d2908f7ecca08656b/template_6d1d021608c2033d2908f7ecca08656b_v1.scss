@@ -14914,19 +14914,23 @@ header {
 }
 
 @media screen and (max-width:1024px) {
+  .breadcrumbs__content {
+    overflow: scroll;
+  }
   .breadcrumbs__link {
     display: block;
     line-height: 15px;
+    white-space: nowrap;
   }
   .breadcrumbs__content>div:nth-child(2) {
     max-width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     align-items: center;
   }
   .breadcrumbs__text {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
     white-space: nowrap;
     padding-right: 1em;
   }
