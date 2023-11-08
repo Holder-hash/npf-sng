@@ -3459,6 +3459,11 @@ textarea.form-control {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .form-group {
+    align-self: flex-start;
+  }
+}
 .form-text {
   display: block;
   margin-top: 0.25rem;
