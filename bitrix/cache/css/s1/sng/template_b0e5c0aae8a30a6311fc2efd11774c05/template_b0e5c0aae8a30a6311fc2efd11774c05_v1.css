@@ -18385,6 +18385,17 @@ header {
     margin-top: 2px;
     min-width: 100% !important;
   }
+  .sng__card-our-clients .sng__card {
+    min-height: unset !important;
+    max-height: unset !important;
+  }
+  .sng__card-our-clients .sng__card img {
+    max-width: 56px !important;
+  }
+  .sng__card-our-clients .sng__card-min {
+    min-height: unset !important;
+    max-height: unset !important;
+  }
   .sng__cards {
     justify-content: center;
   }
