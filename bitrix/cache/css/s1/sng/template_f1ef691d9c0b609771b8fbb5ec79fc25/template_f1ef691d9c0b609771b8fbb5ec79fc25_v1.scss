@@ -20850,27 +20850,11 @@ header {
   height: 68px;
 }
 
-/*body adaptation (global)*/
-@media screen and (max-width: 1024px) { 
-  body {
-    min-width: 100%;
-  }
-  .container, .wrapper {
-    min-width: 100% !important;
-  }
-  .calc-banner__body span{
-    display: none;
-  }
-  .footer__calc {
-    top: 60%;
-    transform: translate(0,-60%);
-  }
-}
-
 @import "../../../../scss/_cookie-adaptation";
 @import "../../../../scss/_header-burger";
 @import "../../../../scss/_sng_container-adaptation";
 @import '../../../../scss/_footer-adaptation';
+@import '../../../../scss/gloabal-adaptation';
 
 //template adaptation
 @import '../../../../scss/template-adaptation/_template_f1ef691d9c0b609771b8fbb5ec79fc25_v1.scss';

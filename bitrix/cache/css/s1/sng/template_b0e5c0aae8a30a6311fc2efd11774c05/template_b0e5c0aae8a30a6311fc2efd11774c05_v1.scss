@@ -20768,23 +20768,7 @@ header {
 @import "../../../../scss/_sng_container-adaptation";
 @import '../../../../scss/_ops_page-adaptation';
 @import '../../../../scss/_footer-adaptation';
-
-/*body adaptation (global)*/
-@media screen and (max-width: 1024px) { 
-  body {
-    min-width: 100%;
-  }
-  .container, .wrapper {
-    min-width: 100% !important;
-  }
-  .calc-banner__body span{
-    display: none;
-  }
-  .footer__calc {
-    top: 60%;
-    transform: translate(0,-60%);
-  }
-}
+@import '../../../../scss/gloabal-adaptation';
 
 /* End */
 

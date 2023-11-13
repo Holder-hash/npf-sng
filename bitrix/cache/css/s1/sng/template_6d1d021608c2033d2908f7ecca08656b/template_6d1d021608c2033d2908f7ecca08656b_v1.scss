@@ -20812,23 +20812,6 @@ header {
   border-color: white !important;
 }
 
-/*body adaptation (global)*/
-@media screen and (max-width: 1024px) { 
-  body {
-    min-width: 100%;
-  }
-  .container, .wrapper {
-    min-width: 100% !important;
-  }
-  .calc-banner__body span{
-    display: none;
-  }
-  .footer__calc {
-    top: 60%;
-    transform: translate(0,-60%);
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .col-7 {
     min-width: 100%;
@@ -20853,6 +20836,7 @@ header {
 @import "../../../../scss/_sng_container-adaptation";
 @import '../../../../scss/_ops_page-adaptation';
 @import '../../../../scss/_footer-adaptation';
+@import '../../../../scss/gloabal-adaptation';
 
 //template adaptation
 @import '../../../../scss/template-adaptation/_template_6d1d021608c2033d2908f7ecca08656b_v1.scss';
