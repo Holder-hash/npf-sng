@@ -111,64 +111,6 @@
     }
 }
 
-// @media screen and (max-width: 1024px) {
-//     .sng__box {
-//       display: flex;
-//       align-items: center;
-//       flex-direction: column;
-//       padding: 1px 24px 13px;
-//       & p video {
-//         width: 100%;
-//       }
-//       & h3 {
-//         text-align: center;
-//       }
-//       & ul {
-//         padding-left: 20px;
-//       }
-//       & p img {
-//         max-width: 500px;
-//         // width: 100% !important;
-//       }
-//       & .graf-img {
-//         max-width: 100%;
-//         overflow-y: scroll;
-//       }
-//       & .npo-list ul{
-//         padding-left: 20px !important;
-//       }
-//       & br {
-//         display: none;
-//       }
-//       & hr {
-//         display: none;
-//       }
-//     }
-//     .sng__box>div {
-//       flex-wrap: wrap;
-//       flex-direction: column;
-//     }
-// }
-// @media screen and (max-width: 1024px) {
-//     .sng__title {
-//       text-align: unset;
-//     }
-//   }
-//   @media screen and (max-width: 354px) {
-//     .sng__title {
-//       text-align: center;
-//     }
-//   }
-// @media screen and (max-width: 1024px) {
-//     .sng__box>div>.sng__link-medium {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       font-size: calc(10px + 8 * (100vw - 320px) / 880);
-//       margin-bottom: 10px;
-//     }
-//   }
-
 /* contracts adaptation */
 @media screen and (max-width: 1024px) {
     .contacts__btn-box {
