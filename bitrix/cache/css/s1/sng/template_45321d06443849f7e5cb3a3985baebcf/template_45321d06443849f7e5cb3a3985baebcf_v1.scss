@@ -1,6 +1,4 @@
 ﻿/* Start:/local/markup/dist/css/style.bundle.css?1692621324303568*/
-/*warning! "../../../../scss/_header-burger" be imported here.*/
-@import '../../../../scss/_footer-adaptation';
 /* Chevin */
 @font-face {
   font-family: 'Chevin';
@@ -12714,11 +12712,6 @@ img {
 .main__sticky {
   margin-top: 372px
 }
-@media screen and (max-width: 1024px) {
-  .main__sticky {
-    margin-top: 333px !important;
-  }
-}
 
 footer,
 header {
@@ -12758,8 +12751,6 @@ header {
   width: 100%;
   display: flex;
 }
-
-@import "../../../../scss/_header-burger";
 
 .nav,
 .nav__list {
@@ -13223,22 +13214,6 @@ header {
   text-align: center
 }
 
-/*news adaptation*/
-
-@media screen and (max-width: 1024px) {
-  .news__link {
-    height: auto;
-    width: 100%;
-  }
-  .news__body>.row {
-    justify-content: center;
-  }
-  .col-4 {
-    min-width: 100%;
-  }
-
-}
-
 .footer {
   background-color: #3764a0;
   color: #fff;
@@ -13353,39 +13328,6 @@ header {
 .footer__holder:hover {
   color: #fff;
   text-decoration: underline
-}
-/*footer adaptation*/
-@media screen and (max-width: 1024px) {
-  .footer__content {
-    flex-direction: column;
-  }
-  .d-flex {
-    margin-top: 10px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer__list {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .footer__low {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 750px) {
-  .footer__right-section-left {
-    margin-top: 20px;
-  }
-  .footer__middle-section>a>img{
-      width: 65px;
-      height: 65px;
-  }
-  .footer__right-section-left>a>img {
-    max-width: 213px;
-    margin-top: 20px;
-  }
 }
 
 #cert-grey {
@@ -13895,21 +13837,6 @@ header {
   text-decoration: underline
 }
 
-@media screen and (max-width: 1024px) {
-  .panel {
-    display: none;
-    z-index: 0;
-  }
-  .bg {
-    z-index: 0 !important;
-    display: none;
-  }
-
-  .panel__item {
-    margin-bottom: 3px;
-  }
-}
-
 .bg {
   position: absolute;
   min-width: 1406px;
@@ -14019,45 +13946,6 @@ header {
   margin-left: 40%
 }
 
-/*contract adaptation*/
-@media screen and (max-width: 1024px) {
-  .contract__box {
-    flex-direction: column-reverse;
-  }
-  .contract__hero {
-    width: 100%;
-  }
-  .contract__hero-number {
-    float: left;
-  }
-  .contract__info {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .contract___adaptBox {
-    display: flex;
-    width: 100%;
-    height: inherit;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .contract__hero-title {
-    font-size: 30px;
-  }
-  .contract__hero-subtitle {
-    width: 100%;
-  }
-
-  .contract__img {
-    width: 350px;
-    height: 190px;
-    display: block;
-    float: right;
-  }
-}
-
 .ops {
   background-color: #fff
 }
@@ -14105,24 +13993,6 @@ header {
 
 .ops__link {
   margin-top: 20px
-}
-@media screen and (max-width: 1024px) {
-  .ops__box {
-    flex-direction: column;
-  }
-  .ops__info {
-    width: 100%;
-  }
-  .ops__img {
-    min-width: 480px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .ops__img {
-    min-width: 0 !important;
-    width: 280px;
-    margin-top: -87px;
-  }
 }
 
 .service {
@@ -14186,17 +14056,7 @@ header {
   -ms-flex-align: start;
   align-items: flex-start
 }
-@media screen and (max-width: 1024px) {
 
-  .service__right {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-  .service__box {
-    padding: 11px;
-  }
-}
 .search-menu__list {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 60%;
@@ -14468,11 +14328,6 @@ header {
   padding: 1px 50px 32px;
   font-size: .8rem
 }
-@media screen and (max-width: 1024px) {
-  .sng__box {
-    padding: 1px 24px 0px;
-  }
-}
 
 .sng__box a:hover {
   text-decoration: underline
@@ -14483,35 +14338,16 @@ header {
   display: -ms-flexbox;
   display: flex
 }
-@media screen and (max-width: 1024px) {
-  .sng__container {
-    flex-direction: column-reverse;
-  }
-}
 
 .sng__content {
   min-width: 1028px;
   margin-right: 15px
-}
-@media screen and (max-width: 1024px) {
-  .sng__content {
-    min-width: 100%;
-  }
 }
 
 .sng__right {
   min-width: 333px;
   height: 100%
 }
-@media screen and (max-width: 1024px) {
-  .sng__right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2px;
-    min-width: 100% !important;
-  }
-}
-
 
 .sng__cards {
   -ms-flex-wrap: wrap;
@@ -14649,11 +14485,6 @@ header {
   font-size: 24px;
   font-weight: 500;
   text-align: justify
-}
-@media screen and (max-width: 354px) {
-  .sng__title {
-    text-align: center;
-  }
 }
 
 .sng__link {
@@ -20935,44 +20766,6 @@ header {
   color: #2a2a2a !important;
   border-color: white !important;
 }
-/*cookie adaptation*/
-@media screen and (max-width: 1024px) { 
-  .cookie {
-    width: 100% !important;
-  }
-
-  .cookie__box{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cookie__body {
-    max-height: 178px;
-    overflow-y: scroll;
-  }
-  .cookie__body>h5 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .cookie__list {
-    flex-wrap: wrap;
-  }
-
-  .cookie__footer {
-    padding: 20px 10px 0;
-    justify-content: flex-start !important;
-  }
-
-  .cookie__item  {
-    padding: 10px;
-    width: 100% !important;
-  }
-
-  .cookie__item:first-child {
-    margin-right: 0 !important;
-  }
-}
 
 /* End */
 
@@ -20999,6 +20792,13 @@ header {
     transform: translate(0,-60%);
   }
 }
+
+@import "../../../../scss/_cookie-adaptation";
+@import "../../../../scss/_header-burger";
+@import '../../../../scss/_footer-adaptation';
+
+//template adaptation
+@import '../../../../scss/template-adaptation/_template_45321d06443849f7e5cb3a3985baebcf_v1.scss';
 
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */
