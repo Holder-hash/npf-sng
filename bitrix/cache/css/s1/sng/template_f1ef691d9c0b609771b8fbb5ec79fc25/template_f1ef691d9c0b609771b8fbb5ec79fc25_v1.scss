@@ -20849,27 +20849,6 @@ header {
 .card__container-subtitle {
   height: 68px;
 }
-@media screen and (max-width: 1024px) { 
-  .card__container-subtitle {
-    display: flex;
-    justify-content: center;
-    h3 {
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-    }
-  }
-
-  .client__fond {
-    flex-wrap: wrap;
-    .card__container .sng__card {
-      max-height: 290px;
-    }
-    .card__container:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-}
 
 /*body adaptation (global)*/
 @media screen and (max-width: 1024px) { 
@@ -20892,6 +20871,9 @@ header {
 @import "../../../../scss/_header-burger";
 @import "../../../../scss/_sng_container-adaptation";
 @import '../../../../scss/_footer-adaptation';
+
+//template adaptation
+@import '../../../../scss/template-adaptation/_template_f1ef691d9c0b609771b8fbb5ec79fc25_v1.scss';
 
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */

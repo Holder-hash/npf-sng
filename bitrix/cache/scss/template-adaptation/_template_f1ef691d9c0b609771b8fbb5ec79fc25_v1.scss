@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px) { 
+    .card__container-subtitle {
+      display: flex;
+      justify-content: center;
+      h3 {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+  }
+  
+    .client__fond {
+      flex-wrap: wrap;
+      .card__container .sng__card {
+        max-height: 290px;
+      }
+      .card__container:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+}
