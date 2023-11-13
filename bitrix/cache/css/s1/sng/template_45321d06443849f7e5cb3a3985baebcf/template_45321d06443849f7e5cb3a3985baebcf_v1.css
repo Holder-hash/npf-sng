@@ -18412,6 +18412,22 @@ header {
     gap: 5px;
   }
 }
+/*body adaptation (global)*/
+@media screen and (max-width: 1024px) {
+  body {
+    min-width: 100%;
+  }
+  .container, .wrapper {
+    min-width: 100% !important;
+  }
+  .calc-banner__body span {
+    display: none;
+  }
+  .footer__calc {
+    top: 60%;
+    transform: translate(0, -60%);
+  }
+}
 @media screen and (max-width: 1024px) {
   .main__sticky {
     margin-top: 333px !important;
