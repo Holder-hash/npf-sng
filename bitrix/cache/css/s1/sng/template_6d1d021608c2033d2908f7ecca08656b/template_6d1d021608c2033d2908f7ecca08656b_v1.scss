@@ -20812,25 +20812,6 @@ header {
   border-color: white !important;
 }
 
-@media screen and (max-width: 1024px) {
-  .col-7 {
-    min-width: 100%;
-  }
-  .col-8 {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
-  }
-}
-
- /*important styles*/
-@media screen and (max-width: 1024px) {
-  .form-check-nowrap {
-      margin-top: 0 !important;
-  }
-}
 @import "../../../../scss/_cookie-adaptation";
 @import "../../../../scss/_header-burger";
 @import "../../../../scss/_sng_container-adaptation";

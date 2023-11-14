@@ -18175,24 +18175,6 @@ header {
   border-color: white !important;
 }
 
-@media screen and (max-width: 1024px) {
-  .col-7 {
-    min-width: 100%;
-  }
-  .col-8 {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
-  }
-}
-/*important styles*/
-@media screen and (max-width: 1024px) {
-  .form-check-nowrap {
-    margin-top: 0 !important;
-  }
-}
 /*cookie adaptation*/
 @media screen and (max-width: 1024px) {
   .cookie {
@@ -18949,6 +18931,24 @@ header {
 @media screen and (max-width: 500px) {
   .calc .form-row {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .col-7 {
+    min-width: 100%;
+  }
+  .col-8 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+  }
+}
+/*important styles*/
+@media screen and (max-width: 1024px) {
+  .form-check-nowrap {
+    margin-top: 0 !important;
   }
 }
 /* End */
