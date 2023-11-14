@@ -18609,6 +18609,26 @@ header {
     margin-bottom: 20px;
   }
 }
+/*breadcrumbs adaptation*/
+@media screen and (max-width: 1024px) {
+  .breadcrumbs__content {
+    overflow: scroll;
+  }
+  .breadcrumbs__link {
+    display: block;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+  .breadcrumbs__content > div:nth-child(2) {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumbs__text {
+    white-space: nowrap;
+    padding-right: 1em;
+  }
+}
 /* End */
 /* /local/markup/dist/css/style.bundle.css?1692621324303568 */
 /* /local/components/sng/cookie/templates/.default/style.css?16160625421224 */
