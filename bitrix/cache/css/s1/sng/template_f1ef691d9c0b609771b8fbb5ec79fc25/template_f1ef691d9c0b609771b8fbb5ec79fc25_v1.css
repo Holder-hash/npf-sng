@@ -18302,7 +18302,7 @@ header {
     flex-wrap: nowrap;
     overflow-y: scroll;
     display: none !important;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
