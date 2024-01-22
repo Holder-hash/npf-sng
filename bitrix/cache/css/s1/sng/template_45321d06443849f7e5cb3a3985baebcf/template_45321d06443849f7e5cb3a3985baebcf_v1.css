@@ -18244,7 +18244,7 @@ header {
     z-index: 9999;
     justify-content: space-between !important;
     align-items: flex-start !important;
-    padding-bottom: 120px;
+    padding-bottom: 130px;
   }
   .burger-menu {
     display: flex;
