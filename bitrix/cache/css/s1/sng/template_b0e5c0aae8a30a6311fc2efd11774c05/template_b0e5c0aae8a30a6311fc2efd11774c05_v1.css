@@ -18441,9 +18441,6 @@ header {
   .sng__box hr {
     display: none;
   }
-  .sng__box img {
-    max-width: 100%;
-  }
   .sng__box > div {
     flex-wrap: wrap;
     flex-direction: column;
